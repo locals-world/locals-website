@@ -7,37 +7,73 @@
     "description": "...",
     "message": "A social blockchain experiment"
   },
-  "intro": {
+   "intro": {
     "description": "...",
-    "message": "Kom bij de poezenclub, laat je valideren door twee andere leden en ontdek alle voordelen van een gevalideerde poes."
+    "message": "Join the Kittyclub, get validated by two other members and discover all benefits that come with a validated cat."
   },
   "actionbutton": {
-  	"description": "...",
-  	"message": "Ik wil meedoen!"
+    "description": "...",
+    "message": "Join us!"
   },
   "intro2": {
-  	"description": "...",
-  	"message": "De Poezenclub is een sociaal experiment."
+    "description": "...",
+    "message": "The Kittyclub is a social experiment."
   },
   "watis": {
-  	"description": "...",
-  	"message": "De poezenclub is een beta toepassing, opgezet door A-Labs, om op kleine schaal te experimenteren met gedecentraliseerde sociale tools. Door de Poezenclub leren we hoe mensen omgaan met deze nieuwe tools, hoe mensen interageren met elkaar d.m.v. de app. De onschuldigheid van de content en de beperkte functionaliteiten van de app zorgen ervoor dat we  snel leren en verbeteren. "
+    "description": "...",
+    "message": "The Kittyclub, created by A-Labs, is a beta test for a decentralized social tool. We want to learn how people interact with this new tool and how they interact with each other within the app. Because of it’s straight forward content and it’s limited functionalities, we aim to learn and improve fast."
   },
   "watis2": {
-  	"description": "...",
-  	"message": "De Poezenclub is gedecentraliseerd."
+    "description": "...",
+    "message": "The Kittyclub is decentralized."
   },
   "watis3": {
-  	"description": "...",
-  	"message": "Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het"
+    "description": "...",
+    "message": "Decentralized is the absence of a central authority, of central storage… By being decentralized, the Kittyclub is an autonomous application, owned by everyone and no one. To make this real, we use the blockchain- technology, more in specific, the"
   },
   "watis4": {
-  	"description": "...",
-  	"message": ") maakt dit mogelijk. Als digitaal innovatielab wil A-Labs uitproberen hoe deze technologie een stedelijke gemeenschap kan verbeteren."
+    "description": "...",
+    "message": ". A-Labs, being a digital innovation lab, wants to try out these technologies to improve a community."
   },
   "whitepaper": {
-  	"description": "...",
-  	"message": "Lees de volledige whitepaper"
+    "description": "...",
+    "message": "Read the whitepaper"
+  },
+  "fullink": {
+    "description": "...",
+    "message": "I wanna join the Kittyclub!"
+  },
+  "hoewerkttittel": {
+    "description": "...",
+    "message": "How does the Kittyclub work?"
+  },
+  "hoewerkttxt": {
+    "description": "...",
+    "message": "By opening the Kittyclub app, you become a new member. Once member of the Kittyclub, you can pick a cat, name it and have it validated by two other validated members. Once your kitty has two validations, you can open the Kittybox and start validating 3 other new members."
+  },  
+  "technisch1": {
+    "description": "...",
+    "message": "More details?"
+  },  
+  "technischlink1": {
+    "description": "...",
+    "message": "Read the whitepaper"
+  },  
+  "technischlink2": {
+    "description": "...",
+    "message": "Check out the Kittyclub Github"
+  },
+  "kitty": {
+    "description": "...",
+    "message": "KittyClub"
+  },  
+  "endmsg1": {
+    "description": "...",
+    "message": "The KittyClub was created and developed by A-Labs, the digital innovation lab of City of Antwerp."
+  },  
+  "endmsg2": {
+    "description": "...",
+    "message": "march"
   }
 }
 

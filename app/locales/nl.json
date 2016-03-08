@@ -1,11 +1,11 @@
 {
   "sitetitle": {
     "description": "...",
-    "message": "Welcome to the Kittyclub"
+    "message": "Welkom bij de Poezenclub!"
   },
   "subtitle": {
     "description": "...",
-    "message": "A social blockchain experiment"
+    "message": "Een sociaal blockchain experiment"
   },
   "intro": {
     "description": "...",
@@ -38,6 +38,42 @@
   "whitepaper": {
     "description": "...",
     "message": "Lees de volledige whitepaper"
+  },
+  "fullink": {
+    "description": "...",
+    "message": "Ik wil meedoen met de Poezenclub!"
+  },
+  "hoewerkttittel": {
+    "description": "...",
+    "message": "Hoe werkt die Poezenclub eigenlijk?"
+  },
+  "hoewerkttxt": {
+    "description": "...",
+    "message": "Je wordt lid van de Poezenclub door de Poezenclub-app te openen. Als lid van de Poezenclub kan je een poes kiezen, een naam geven en ze laten valideren door reeds gevalideerde poezen. Na twee validaties is je poes gevalideerd. Je kan nu de Poezendoos openen en ook zelf twee andere poezen valideren."
+  },  
+  "technisch1": {
+    "description": "...",
+    "message": "Meer technische details?"
+  },  
+  "technischlink1": {
+    "description": "...",
+    "message": "Lees de volledige whitepaper"
+  },  
+  "technischlink2": {
+    "description": "...",
+    "message": "Bekijk de PoezenClub Github"
+  },
+  "kitty": {
+    "description": "...",
+    "message": "Poezenclub"
+  },  
+  "endmsg1": {
+    "description": "...",
+    "message": "De Poezenclub werd bedacht en uitgewerkt door A-Labs, het digitale innovatie-lab binnenin Stad Antwerpen."
+  },  
+  "endmsg2": {
+    "description": "...",
+    "message": "maart"
   }
 }
 

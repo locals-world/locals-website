@@ -71,14 +71,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <!-- SECTIE 1: header -->
             <div class="headertje">
+                <div class="languagepicker">
+                <iron-selector attr-for-selected="lang" selected="en" class="languagepickersel">
+                  <div lang="en" on-tap="lang_en" class="language"><h2>EN</h2></div>
+                  <div lang="nl" on-tap="lang_nl" class="language"><h2>NL</h2></div>
+                </iron-selector>
+                </div>
+              <div class="intro">
+
               <div class="introvak">
                 <img src="../images/icon-512x512.png">
                 <div id="titel">
                   <h1 class="maintitle">
-                    <button on-tap="lang_en">EN</button>
-                    <button on-tap="lang_nl">NL</button>
-                    <button on-tap="lang_fr">FR</button>
-                    <button on-tap="lang_ar">AR</button>
+                    <!-- <button on-tap="lang_fr">FR</button> -->
+                    <!-- <button on-tap="lang_ar">AR</button> -->
                     <i18n-msg msgid="sitetitle"></i18n-msg>
                   </h1>
                   <h2 class="subtitle"><i18n-msg msgid="subtitle"></i18n-msg></h2>
@@ -88,6 +94,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   </div>
                 </div>
               </div>
+            </div>
             </div>
 
 
@@ -120,7 +127,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <!-- SECTIE 3: full btn -->
             <div class="contentsectie">
               <div class="fullink">
-                <a href="//app.poezenclub.be" target="_blank">Ik wil meedoen met de Poezenclub!</a>
+                <a href="//app.poezenclub.be" target="_blank"><i18n-msg msgid="fullink"></i18n-msg></a>
               </div>
             </div>
 
@@ -129,7 +136,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <div class="contentsectie darkback">
               <div class="hoewerkt">
                 <div class="onderdeel">
-                    <h2>Hoe werkt die Poezenclub eigenlijk?</h2>
+                    <h2><i18n-msg msgid="hoewerkttittel"></i18n-msg></h2>
                     <template is="dom-if" if="{{!queryMatches}}">
                       <img src="../images/hoewerktdepoezendoos-vertical.png">
                     </template>
@@ -139,7 +146,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
                   <div class="eindtxt">
                     <p>
-                      Je wordt lid van de Poezenclub door de <a href="//app.poezenclub.be" target="_blank">Poezenclub-app</a> te openen. Als lid van de Poezenclub kan je een poes kiezen, een naam geven en ze laten valideren door reeds gevalideerde poezen. Na twee validaties is je poes gevalideerd. Je kan nu de Poezendoos openen en ook zelf twee andere poezen valideren. 
+                      <i18n-msg msgid="hoewerkttxt"></i18n-msg>
                     </p>
                   </div>
               </div>
@@ -152,11 +159,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="hoewerkt">
                 <div class="onderdeel">
                   <div class="technisch">
-                    <p>
-                      Meer technische details? 
+                    <p><i18n-msg msgid="technisch1"></i18n-msg>
                     </p>
-                    <a href="/whitepaper"><img src="../images/smallpaw-black.png">Lees de volledige whitepaper</a>                    
-                    <a href="//github.com/A-StadLabs/poezenclub"><img src="../images/GitHub-Mark_40x40-black.svg">Bekijk de PoezenClub Github</a>                    
+                    <a href="/whitepaper"><img src="../images/smallpaw-black.png"><i18n-msg msgid="technischlink1"></i18n-msg></a>                    
+                    <a href="//github.com/A-StadLabs/poezenclub"><img src="../images/GitHub-Mark_40x40-black.svg"><i18n-msg msgid="technischlink2"></i18n-msg></a>                    
                   </div>
                 </div>
 
@@ -186,14 +192,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         </div>
                         <template is="dom-if" if="{{queryMatches}}"><p class="tussenschot semitransparant">|</p></template>
                         <div class="contactlogo">
-                        <img src="../images/GitHub-Mark_40x40.svg"><a href="//github.com/A-StadLabs/poezenclub">Github Poezenclub</a>
+                        <img src="../images/GitHub-Mark_40x40.svg"><a href="//github.com/A-StadLabs/poezenclub">Github <i18n-msg msgid="kitty"></i18n-msg></a>
                         </div>
                       </div>
-                     <h1 class="semitransparant">Poezenclub</h1>
+                     <h1 class="semitransparant"><i18n-msg msgid="kitty"></i18n-msg></h1>
                         <img src="../images/A-LabsLogo-white.svg" class="logotje">
 
 
-                    <p class="semitransparant bolder">De Poezenclub werd bedacht en uitgewerkt door A-Labs, het digitale innovatie-lab binnenin Stad Antwerpen.<br>Copyright © maart 2016</p>
+                    <p class="semitransparant bolder"><i18n-msg msgid="endmsg1"></i18n-msg><br>Copyright © <i18n-msg msgid="endmsg2"></i18n-msg> 2016</p>
               </div>
             </div>
           </div>
