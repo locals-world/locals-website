@@ -74,11 +74,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="introvak">
                 <img src="../images/icon-512x512.png">
                 <div id="titel">
-                  <h1 class="maintitle">Welkom bij de Poezenclub!</h1>
-                  <h2 class="subtitle">Een social blockchain experiment</h2>
+                  <h1 class="maintitle">
+                    <button on-tap="lang_en">EN</button>
+                    <button on-tap="lang_nl">NL</button>
+                    <button on-tap="lang_fr">FR</button>
+                    <button on-tap="lang_ar">AR</button>
+                    <i18n-msg msgid="sitetitle"></i18n-msg>
+                  </h1>
+                  <h2 class="subtitle"><i18n-msg msgid="subtitle"></i18n-msg></h2>
                   <div class="joinvlak">
-                    <p>Kom bij de poezenclub, laat je valideren door twee andere leden en ontdek alle voordelen van een gevalideerde poes.</p>
-                    <a href="//app.poezenclub.be" class="joinbtn" target="_blank">Ik wil meedoen!</a>
+                    <p><i18n-msg msgid="intro"></i18n-msg></p>
+                    <a href="//app.poezenclub.be" class="joinbtn" target="_blank"><i18n-msg msgid="actionbutton"></i18n-msg></a>
                   </div>
                 </div>
               </div>
@@ -90,23 +96,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="watis">
                 <div class="onderdeel">
                   <div class="onderdeeltxt">
-                    <h2>De Poezenclub is een sociaal experiment.</h2>
+                    <h2><i18n-msg msgid="intro2"></i18n-msg></h2>
                     <p>
-                      De poezenclub is een beta toepassing, opgezet door A-Labs, om op kleine schaal te experimenteren met gedecentraliseerde sociale tools. Door de Poezenclub leren we hoe mensen omgaan met deze nieuwe tools, hoe mensen interageren met elkaar d.m.v. de app. De onschuldigheid van de content en de beperkte functionaliteiten van de app zorgen ervoor dat we  snel leren en verbeteren. 
+                      <i18n-msg msgid="watis"></i18n-msg>
                     </p>
                   </div>
                   <img src="../images/social.png">
                 </div>
                 <div class="onderdeel">
                   <div class="onderdeeltxt">
-                    <h2>De Poezenclub is gedecentraliseerd.</h2>
+                    <h2><i18n-msg msgid="watis2"></i18n-msg></h2>
                     <p>
-                      Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het <a href="//www.ethereum.org/" target="_blank">Ethereum-protocol</a>) maakt dit mogelijk. Als digitaal innovatielab wil A-Labs uitproberen hoe deze technologie een stedelijke gemeenschap kan verbeteren. 
+                      <i18n-msg msgid="watis3"></i18n-msg> <a href="//www.ethereum.org/" target="_blank">Ethereum-protocol</a><i18n-msg msgid="watis4"></i18n-msg> 
                     </p>
                   </div>
                   <img src="../images/decentralised.png">
                 </div>
-                    <a class="onderdeelbtn" href="/whitepaper" class="joinbtn"><img src="../images/smallpaw.png">Lees de volledige whitepaper</a>      
+                    <a class="onderdeelbtn" href="/whitepaper" class="joinbtn"><img src="../images/smallpaw.png"><i18n-msg msgid="whitepaper"></i18n-msg></a>      
               </div>
             </div>
 
