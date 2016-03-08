@@ -337,7 +337,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       width: 100vw;
       min-height: 70vh;
       box-sizing:border-box;
-      padding: 35px 0px 35px 0px;
+      padding: 0px 0px 35px 0px;
       background: 
         radial-gradient(
         rgba(0, 0, 0, 0.4), 
@@ -349,10 +349,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       background-repeat: no-repeat;
       background-position: center; 
       @apply(--layout-vertical);
-      @apply(--layout-center-center);
+      @apply(--layout-center);
       }
 
+.intro {
+  width: 100%;
+  height: 100%;
+      min-height: 70vh;
+
+        @apply(--layout-vertical);
+      @apply(--layout-center-center);
+}
+
     .introvak {
+/*      margin: 0px 0px 35px 0px;
+*/
       color: white;
       @apply(--layout-horizontal);
       @apply(--layout-center-center);
@@ -419,6 +430,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       padding: 20px 25px 20px 25px;
       font-size: 28px;
       margin: 40px 0px 0px 0px;
+      text-align: center;
     }
     .joinbtn:hover {
       background-color: var(--pinktwee-theme-color);
@@ -702,14 +714,53 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
 
+  .logotje {
+    width: 50px;
+    height: 50px;
+    opacity: 0.35;
+    margin: 0px 0px 20px 0px;
+  }
 
 
-.logotje {
-  width: 50px;
-  height: 50px;
-  opacity: 0.35;
-  margin: 0px 0px 20px 0px;
-}
+  .languagepicker {
+    width: 100vw;
+    background: transparent;
+    margin: 0px 0px 35px 0px;
+    padding: 0px 40px 0px 0px;
+    @apply(--layout-horizontal);
+    @apply(--layout-end-justified);
+  }
+
+  .languagepickersel {
+    height: 100%;
+    @apply(--layout-horizontal);
+    @apply(--layout-center);
+  }
+
+  .languagepickersel .iron-selected {
+    background-color: rgba(0,0,0,1);
+    text-decoration: underline;
+    color: var(--pinktwee-theme-color);
+  }
+
+  .language {
+    @apply(--layout-horizontal);
+    @apply(--layout-center-center);
+    color: var(--pink-theme-color);
+    width: 50px;
+    height: 40px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px;
+    cursor: pointer;
+
+  }
+
+
+
+  .language h2 {
+    font-size: 16px;
+  }
+
   /* Tablet+ */
   @media (min-width: 601px) {
   }
