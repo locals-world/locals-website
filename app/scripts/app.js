@@ -41,6 +41,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // imports are loaded and elements have been registered
   });
 
+  document.addEventListener('HTMLImportsLoaded', function() {
+    I18nMsg.lang = 'en';
+    I18nMsg.url = 'locales'; // optionally use custom folder for locales.
+    Platform.performMicrotaskCheckpoint();
+  });
+
   // Main area's paper-scroll-header-panel custom condensing transformation of
   // the appName in the middle-container and the bottom title in the bottom-container.
   // The appName is moved to top and shrunk on condensing. The bottom sub title
@@ -74,6 +80,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   };
 
   app.closeDrawer = function() {
+  };
+
+  app.lang_en = function(){
+    I18nMsg.lang = 'en';
+    Platform.performMicrotaskCheckpoint();
+  };
+
+  app.lang_nl = function(){
+    I18nMsg.lang = 'nl';
+    Platform.performMicrotaskCheckpoint();
+  };
+
+  app.lang_fr = function(){
+    I18nMsg.lang = 'fr';
+    Platform.performMicrotaskCheckpoint();
+  };
+
+  app.lang_ar = function(){
+    I18nMsg.lang = 'ar';
+    Platform.performMicrotaskCheckpoint();
   };
 
 })(document);
