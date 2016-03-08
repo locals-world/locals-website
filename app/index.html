@@ -1,0 +1,351 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Poezenclub">
+  <title>Welkom bij de PoezenClub</title>
+
+  <!-- Place favicon.ico in the `app/` directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#2E3AA1">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- Because this project uses vulcanize this should be your only html import
+       in this file. All other imports should go in elements.html -->
+  <link rel="import" href="elements/elements.html">
+
+  <!-- For shared styles, shared-styles.html import in elements.html -->
+  <style is="custom-style" include="shared-styles"></style>
+</head>
+
+<body unresolved>
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+  <iron-media-query query="(min-width: 600px)" query-matches="{{queryMatches}}"></iron-media-query>
+    <!-- Main Content -->
+    <div class="content">
+      <iron-pages attr-for-selected="data-route" selected="{{route}}">
+        <section data-route="home">
+          <div class="canvaspink">
+
+            <!-- SECTIE 1: header -->
+            <div class="headertje">
+              <div class="introvak">
+                <img src="../images/icon-512x512.png">
+                <div id="titel">
+                  <h1 class="maintitle">Welkom bij de Poezenclub!</h1>
+                  <h2 class="subtitle">Een social blockchain experiment</h2>
+                  <div class="joinvlak">
+                    <p>Kom bij de poezenclub, laat je valideren door twee andere leden en ontdek alle voordelen van een gevalideerde poes.</p>
+                    <a href="//app.poezenclub.be" class="joinbtn" target="_blank">Ik wil meedoen!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- SECTIE 2: wat is een poezenclub? -->
+            <div class="contentsectie whiteback">
+              <div class="watis">
+                <div class="onderdeel">
+                  <div class="onderdeeltxt">
+                    <h2>De Poezenclub is een sociaal experiment.</h2>
+                    <p>
+                      De poezenclub is een beta toepassing, opgezet door A-Labs, om op kleine schaal te experimenteren met gedecentraliseerde sociale tools. Door de Poezenclub leren we hoe mensen omgaan met deze nieuwe tools, hoe mensen interageren met elkaar d.m.v. de app. De onschuldigheid van de content en de beperkte functionaliteiten van de app zorgen ervoor dat we  snel leren en verbeteren. 
+                    </p>
+                  </div>
+                  <img src="../images/social.png">
+                </div>
+                <div class="onderdeel">
+                  <div class="onderdeeltxt">
+                    <h2>De Poezenclub is gedecentraliseerd.</h2>
+                    <p>
+                      Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het <a href="//www.ethereum.org/" target="_blank">Ethereum-protocol</a>) maakt dit mogelijk. Als digitaal innovatielab wil A-Labs uitproberen hoe deze technologie een stedelijke gemeenschap kan verbeteren. 
+                    </p>
+                  </div>
+                  <img src="../images/decentralised.png">
+                </div>
+                    <a class="onderdeelbtn" href="/whitepaper" class="joinbtn"><img src="../images/smallpaw.png">Lees de volledige whitepaper</a>      
+              </div>
+            </div>
+
+
+            <!-- SECTIE 3: full btn -->
+            <div class="contentsectie">
+              <div class="fullink">
+                <a href="//app.poezenclub.be" target="_blank">Ik wil meedoen met de Poezenclub!</a>
+              </div>
+            </div>
+
+
+            <!-- SECTIE 4: Hoe werkt zo'n poezenclub? -->
+            <div class="contentsectie darkback">
+              <div class="hoewerkt">
+                <div class="onderdeel">
+                    <h2>Hoe werkt die Poezenclub eigenlijk?</h2>
+                    <template is="dom-if" if="{{!queryMatches}}">
+                      <img src="../images/hoewerktdepoezendoos-vertical.png">
+                    </template>
+                    <template is="dom-if" if="{{queryMatches}}">
+                      <img src="../images/hoewerktdepoezendoos-horizontal.png">
+                    </template>
+                </div>
+                  <div class="eindtxt">
+                    <p>
+                      Je wordt lid van de Poezenclub door de <a href="//app.poezenclub.be" target="_blank">Poezenclub-app</a> te openen. Als lid van de Poezenclub kan je een poes kiezen, een naam geven en ze laten valideren door reeds gevalideerde poezen. Na twee validaties is je poes gevalideerd. Je kan nu de Poezendoos openen en ook zelf twee andere poezen valideren. 
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+
+
+            <!-- SECTIE 5: Technisch? -->
+            <div class="contentsectie darkerback">
+              <div class="hoewerkt">
+                <div class="onderdeel">
+                  <div class="technisch">
+                    <p>
+                      Meer technische details? 
+                    </p>
+                    <a href="/whitepaper"><img src="../images/smallpaw-black.png">Lees de volledige whitepaper</a>                    
+                    <a href="//github.com/A-StadLabs/poezenclub"><img src="../images/GitHub-Mark_40x40-black.svg">Bekijk de PoezenClub Github</a>                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- SECTIE 6: Einde -->
+            <div class="contentsectie blackback">
+              <div class="einde">
+                      <div class="contact">
+                        <div class="contactlogo">
+                        <img src="../images/gitterlogo.jpg"><a href="//gitter.im/A-Labs/comms">gitter.im/A-Labs/comms</a>
+                        </div> 
+                        <template is="dom-if" if="{{queryMatches}}"><p class="tussenschot semitransparant">|</p></template>
+                        <div class="contactlogo">
+                        <img src="../images/mail.svg"><a href="mailto:hello@a-labs.eu?Subject=About%20the%20Kitty%20Club" target="_top">
+                        hello@a-labs.eu</a>
+                        </div>
+                        <template is="dom-if" if="{{queryMatches}}"><p class="tussenschot semitransparant">|</p></template>
+                        <div class="contactlogo">
+                        <img src="../images/GitHub-Mark_40x40.svg"><a href="//github.com/A-StadLabs/poezenclub">Github Poezenclub</a>
+                        </div>
+                      </div>
+                     <h1 class="semitransparant">Poezenclub</h1>
+                        <img src="../images/A-LabsLogo-white.svg" class="logotje">
+
+
+                    <p class="semitransparant bolder">De Poezenclub werd bedacht en uitgewerkt door A-Labs, het digitale innovatie-lab binnenin Stad Antwerpen.<br>Copyright © maart 2016</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <section data-route="whitepaper">
+
+          <paper-toolbar class="horizontal layout">
+            <a href="/">< terug</a><button><a href="../images/POEZENCLUB.pdf" target="_blank">Download als pdf</a></button>  
+          </paper-toolbar>
+
+          <div class="whitepaper">
+            <br>
+            <h1>POEZENCLUB</h1><br>
+            <p>Een social blockchain experiment
+            <br>
+            A-Labs © 2016<br>
+            <a href="//poezenclub.be">http://poezenclub.be</a><br>
+            <a href="mailto:hello@a-labs.eu">hello@a-labs.eu</a>
+            </p>
+            <br>
+            <br>
+            <br>
+            <h2>Wat is de Poezenclub?</h2>
+            <h3>De Poezenclub is een sociaal experiment.</h3>
+            <p>De Poezenclub is een beta toepassing, opgezet door A-Labs, om op kleine schaal te experimenteren met gedecentraliseerde sociale tools. Door de Poezenclub leren we hoe mensen omgaan met deze nieuwe tools, hoe mensen interageren met elkaar d.m.v. de app. De onschuldigheid van de content en de beperkte functionaliteiten van de app zorgen ervoor dat we  snel leren en verbeteren. </p>
+            <br>
+            <h3>De Poezenclub is gedecentraliseerd.</h3>
+            <p>
+            Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het Ethereum-protocol) maakt dit mogelijk. Als digitaal innovatielab wil A-Labs uitproberen hoe deze technologie een stedelijke gemeenschap kan verbeteren.</p>
+            <br>
+            <br>
+            <br>
+            <h2>Hoe werkt de Poezenclub?</h2>
+            <h3>Het concept</h3>
+            <p>Je wordt lid van de Poezenclub door de Poezenclub-app te openen. Als lid van de Poezenclub kan je een poes kiezen, een naam geven en ze laten valideren door reeds gevalideerde poezen. Na twee validaties is je poes gevalideerd. Je kan nu de Poezendoos openen en ook zelf twee andere poezen valideren.</p>
+            <br>
+            <h3>Enkele technische basisbegrippen</h3>
+            <p>
+            <span class="italic">Blockchain </span>( <a href="//en.wikipedia.org/wiki/Block_chain_(database)">https://en.wikipedia.org/wiki/Block_chain_(database)</a> )<br>
+            Een gedistribueerde database die verdeeld is over het volledige netwerk en onderhouden wordt door miners die alle transacties herberekenen. Door de combinatie van gedecentraliseerde architectuur, encryptie en verificatie door de miners coördineert de blockchain de instemming van alle partijen. <br>
+            <span class="italic">Ethereum </span>( <a href="www.ethereum.org">www.ethereum.org</a> )<br>
+            Een gedecentraliseerd platform voor smart contracts die applicaties draaien zonder tussenpersonen en zonder risico op downtime, censuur, fraude. <br>
+            <span class="italic">Ether </span>( <a href="//www.ethereum.org/ether">https://www.ethereum.org/ether</a> )<br>
+            De cryptocurrency van Ethereum, die nodig is om smart contracts uit te voeren. De miners in Ethereum worden hierin betaald voor hun rekenwerk dus ether wordt gezien als de olie die de machine doet draaien. <br>
+            <span class="italic">Smartcontracts </span>( <a href="//en.wikipedia.org/wiki/Smart_contract">https://en.wikipedia.org/wiki/Smart_contract</a> )<br>
+            Computerprotocols die de onderhandeling of de uitvoering van een contract faciliteren, verifiëren of bekrachtigen.<br>
+            <span class="italic">MQTT </span>( <a href="//mqtt.org/">http://mqtt.org/</a> )<br>
+            Een protocol om machines met machines te laten praten.</p>
+            <br>
+
+            <h3>Technische omschrijving per actie</h3>
+            <p><span class="italic">Ik open de app </span></p>
+            <ul>
+              <li>Er wordt lokaal op mijn toestel een wallet aangemaakt met public en private key en een account balance.</li>
+              <li>Op het membershipcontract in Ethereum wordt een nieuwe lijn toegevoegd, waarin mijn account als nieuw lid word toegevoegd.
+              </li>
+              <li>Er wordt in Ethereum een validatiecontract aangemaakt voor deze account.
+              </li>
+              <li>Je ontvangt 1 ether in je wallet.</li>
+            </ul>
+            <br>
+            
+            <p><span class="italic">Ik kies een naam en foto voor mijn kat </span></p>
+            <ul>
+              <li>Deze gegevens worden lokaal op je toestel bewaard.</li>
+            </ul>
+            <br>
+            
+            <p><span class="italic">Om mijn poes te laten valideren, vraag ik de pincode van een lid met een gevalideerde poes </span></p>
+            <ul>
+              <li>Er wordt over MQTT een bericht gestuurd naar het topic “.../pincode-validator”. In dit bericht staat de foto en de naam van de te valideren kat, het commando “valideer mij”, de pincode en het validatiecontractadres van de aanvrager.</li>
+              <li>De validator ontvangt over MQTT van het topic “.../pincode-validator” dit bericht en ziet in de app de te valideren gegevens.</li>
+            </ul>
+            <br>
+
+            <p><span class="italic">Validator bevestigt in de app de gegevens</span></p>
+            <ul>
+              <li>Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-aanvrager”.  In dit bericht staat de boodschap “validatie ok”.</li>
+              <li>Op het validatiecontract van de aanvrager wordt +1 validatie toegevoegd.</li>
+              <li>Er wordt 1 ether van de wallet van de validator naar de wallet van de aanvrager gestuurd, m.a.w. het kost 1 ether om iemand te valideren.</li>
+              <li>Over MQTT wordt naar de aanvrager verstuurd dat de validator bevestigd heeft.</li>
+            </ul>
+            <br>
+
+            <p><span class="italic">Ik vraag een tweede validatie aan een ander lid met een gevalideerde poes</span></p>
+            <ul>
+              <li>Alle stappen zoals hierboven beschreven worden herhaald.</li>
+              <li>Eens er twee validaties op het validatiecontract staan, worden nieuwe functies in de app ontsloten: openen van de doos, zelf kunnen valideren.</li>
+            </ul>
+            <br>
+
+            <p><span class="italic">Om de doos te openen, voer de ik in de app de pincode van de doos in</span></p>
+            <ul>
+              <li>Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-doos”. In dit bericht staat het validatiecontractadres van de aanvrager, zijn pincode en het commando “check contract”.</li>
+              <li>Eens er twee validaties op het validatiecontract staan, worden nieuwe functies in de app ontsloten: openen van de doos, zelf kunnen valideren.</li>
+              <li>De doos ontvangt dit bericht en checkt het aantal validaties op het validatiecontract van de aanvrager.
+              Staan er 2 validaties op dat validatiecontract, dan opent de doos.</li>
+              <li>Een nieuwe pincode voor de doos worden aangemaakt.</li>
+            </ul>
+            <br>
+
+            <p><span class="italic">Ik sluit de doos</span></p>
+            <ul>
+              <li>Er wordt over MQTT een bericht gestuurd naar topic “.../pincode doos”. In dit bericht staat het het commando “sluit doos”. De doos ontvangt dit bericht en sluit.</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <h2>Social economics in de Poezenclub</h2>
+            <h3>De waarde van het valideren</h3>
+            <p>Een gedecentraliseerd netwerk moet op zichzelf kunnen bestaan en verder uitbreiden, zonder onderhoud van een centrale partij. Daarom kost in het Ethereum protocol elke transactie met een smart contract een kleine hoeveelheid ether, een soort transactiekost betaald door het netwerk.<br><br>
+            Wij gaan voor het Poezenclub-netwerk een stap verder en voeren social economics in: we geven een waarde aan het valideren, nl. 1 validatie = 1 ether. Het kost de validator 1 ether om een poes te valideren. De te valideren poes ontvangt deze ether. Op deze manier zorgen we ervoor dat alle nodes gelijkwaardig zijn in het netwerk en kan geen enkele node een belangrijkere of meer centrale positie krijgen in het netwerk (vb. één node die 100 validaties uit zou voeren).<br><br>
+            Concreet krijgt elk nieuw lid van de Poezenclub bij aanmaak van zijn account 1,005 ether in zijn wallet. Per validatie krijgt hij er 1 ether bij. Met een volledig gevalideerde poes heeft dit lid in zijn wallet dus 3,005 ether: 1,005 (aanmaak account) + 1 (eerste validatie) + 1 (tweede validatie). Met deze 3,005 ether kan hij op zijn beurt 3 nieuwe poezen valideren. Zonder ether kan er niet gevalideerd worden, dus elk lid van de Poezenclub (met een gevalideerde poes) kan maximaal 3 andere poezen valideren. Met dit ingebouwd mechanisme van social economics bewaart de Poezenclub zijn decentrale netwerkstructuur.</p>
+            <br>
+            <br>
+            <br>
+            <h2>Wat willen we leren uit de Poezenclub?</h2>
+            <h3>Werken alle technische componenten?</h3>
+            <ul>
+              <li>Is Ethereum het protocol dat we willen gebruiken voor dit soort tools?</li>
+              <li>Is het handig voor de gebruiker om vanuit een front-endapp (in dit geval Polymer) te interageren met een blockchain?</li>
+              <li>Klopt de opmaak van de twee smart contracts in de app, nl. Membershipcontract en Validatiecontract? Zijn deze twee contracten voldoende of moeten er meer zijn?</li>
+              <li>Wat zijn technologische valkuilen waardoor het systeem vastloopt?</li>
+            </ul>
+            <h3>Werken de social economics zoals voorzien?</h3>
+            <ul>
+              <li>Hoeveel leden komen erbij per uur en per dag?</li>
+              <li>Hoeveel mensen worden gevalideerd per uur en per dag?</li>
+              <li>Hoeveel mensen laten zich niet valideren?</li>
+              <li>Hoeveel mensen gebruiken alle validatiemogelijkheden?</li>
+              <li>Hoeveel mensen komen er om hulp vragen?</li>
+              <li>Lopen de social economics zoals door ons voorzien?</li>
+              <li>Kunnen we uit de teller van adam afleiden op welk tijdstip een nieuw lid zich aanmeldt?</li>
+            </ul>
+            <h3>Wat brengt dit experiment bij de deelnemers te weeg?</h3>
+            <ul>
+              <li>Zien de deelnemers het potentieel van de gebruikte toepassing, verder dan de poezenclub? Komen er nieuwe ideëen door tot stand?</li>
+              <li>Breidt het netwerk zich verder uit dan de gesloten testgemeenschap van collega’s (bv thuis)?</li>
+              <li>Doen de deelnemers de moeite om te gaan onderzoeken/lezen wat er nu eigenlijk gebeurt, of zijn mensen daarin niet geïnteresseerd?</li>
+            </ul>
+
+          </div>
+        </section>        
+
+      </iron-pages>
+    </div>
+
+
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>
