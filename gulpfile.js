@@ -365,7 +365,7 @@ gulp.task('deploy', ['default'], function() {
     if (err) {
       throw (err)
     }
-    console.log(deploy);
+    console.log('Deploying to ',deploy.url);
   });
 });
 
