@@ -166,6 +166,11 @@ gulp.task('copy', function() {
     dot: true
   }).pipe(gulp.dest(dist()));
 
+  // copy locales 
+  return gulp.src('app/locales/*.*')
+    .pipe(gulp.dest(dist('locales')));
+
+
   // Copy over only the bower_components we need
   // These are things which cannot be vulcanized
   var bower = gulp.src([
@@ -360,6 +365,7 @@ gulp.task('deploy', ['default'], function() {
     if (err) {
       throw (err)
     }
+    console.log(deploy);
   });
 });
 
