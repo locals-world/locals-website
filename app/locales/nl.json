@@ -238,6 +238,38 @@
   "whitepaperactie7txta": {
     "description": "...",
     "message": "Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-doos”. In dit bericht staat het het commando “sluit doos”. De doos ontvangt dit bericht en sluit."
+  },  
+  "whitepapertitel8": {
+    "description": "...",
+    "message": "Social economics in de Poezenclub"
+  },  
+  "whitepaperondertitel8": {
+    "description": "...",
+    "message": "De waarde van het valideren"
+  },  
+  "whitepapertxt8a": {
+    "description": "...",
+    "message": "Een gedecentraliseerd netwerk moet op zichzelf kunnen bestaan en verder uitbreiden, zonder onderhoud van een centrale partij. Daarom kost in het Ethereum protocol elke transactie met een smart contract een kleine hoeveelheid ether, een soort transactiekost betaald door het netwerk."
+  },  
+  "whitepapertxt8b": {
+    "description": "...",
+    "message": "Wij gaan voor het Poezenclub-netwerk een stap verder en voeren social economics in: we geven een waarde aan het valideren, nl. 1 validatie = 1 ether. Het kost de validator 1 ether om een poes te valideren. De te valideren poes ontvangt deze ether. Op deze manier zorgen we ervoor dat alle nodes gelijkwaardig zijn in het netwerk en kan geen enkele node een belangrijkere of meer centrale positie krijgen in het netwerk (vb. één node die 100 validaties uit zou voeren)."
+  },  
+  "whitepapertxt8c": {
+    "description": "...",
+    "message": "Concreet krijgt elk nieuw lid van de Poezenclub bij aanmaak van zijn account 1,005 ether in zijn wallet. Per validatie krijgt hij er 1 ether bij. Met een volledig gevalideerde poes heeft dit lid in zijn wallet dus 3,1 ether: 1,1 (aanmaak account) + 1 (eerste validatie) + 1 (tweede validatie). Met deze 3,1 ether kan hij op zijn beurt 3 nieuwe poezen valideren. Zonder ether kan er niet gevalideerd worden, dus elk lid van de Poezenclub (met een gevalideerde poes) kan maximaal 3 andere poezen valideren. Met dit ingebouwd mechanisme van social economics bewaart de Poezenclub zijn decentrale netwerkstructuur."
+  },  
+  "whitepapertitel9": {
+    "description": "...",
+    "message": "Wat willen we leren uit de Poezenclub?"
+  },  
+  "whitepaperondertitel9": {
+    "description": "...",
+    "message": "Werken alle technische componenten?"
+  },  
+  "whitepaperondertitel9": {
+    "description": "...",
+    "message": "Werken alle technische componenten?"
   }
 }
 
