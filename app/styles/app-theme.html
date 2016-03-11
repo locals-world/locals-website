@@ -377,7 +377,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
          @apply(--layout-vertical);
       @apply(--layout-center-center);
       box-sizing:border-box;
-      padding: 12vh 10vw 0vw 10vw;   
+      padding: 6vh 10vw 0vw 10vw;   
       background-color: var(--blauw-theme-color);
       text-align: center;
     }
@@ -506,14 +506,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .whatis h2 {
       text-align: center;
-      margin: 20px 0px 0px 0px;
+      margin: 20px 0px 20px 0px;
     }
 
     .onderdeel {
       width: 100%;
       @apply(--layout-horizontal);
       @apply(--layout-start);
-      @apply(--layout-center-center);
       @apply(--layout-wrap);
     }
 
@@ -521,6 +520,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       max-width: 750px;
       @apply(--layout-vertical);
       @apply(--layout-start);
+      text-align: left;
+      margin: 0px 0px 20px 0px;
+
     }
 
     .onderdeelbtn {
@@ -839,6 +841,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   /* mobile-small */
   @media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
 
+    .headtitle {
+      padding: 12vh 10vw 0vw 10vw;   
+    }
+
     .maintitle {
       font-size: 52px;
       text-align: center;
@@ -857,11 +863,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .joinbtn {
       width: 100%;    
     }
+
+    .onderdeeltxt {
+      text-align: center;
+    }
+
+    .whatis h2 {
+      text-align: center;
+      margin: 20px 0px 20px 0px;
+    }
+
+
+
   }
 
 
   /* mobile-large */
   @media all and (min-width: 361px) and (orientation: portrait) {
+
+
+    .headtitle {
+      padding: 12vh 10vw 0vw 10vw;   
+    }
+
+
     .maintitle {
       font-size: 52px;
       text-align: center;
@@ -900,6 +925,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .contact a {
       font-size: 14px;
     }
+    .onderdeeltxt {
+      text-align: center;
+    }
+
+
+    .whatis h2 {
+      text-align: center;
+      margin: 20px 0px 20px 0px;
+    }
+
 
 
   }

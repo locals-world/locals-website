@@ -42,7 +42,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   });
 
   document.addEventListener('HTMLImportsLoaded', function() {
-    I18nMsg.lang = 'nl';
+    I18nMsg.lang = 'en';
     I18nMsg.url = 'locales'; // optionally use custom folder for locales.
     Platform.performMicrotaskCheckpoint();
   });

@@ -19,6 +19,14 @@
     "description": "...",
     "message": "Locals is the tool belt to interact with, create and sustain a local community. It’s a decentralised app, running on the Ethereum blockchain and IPFS (the InterPlantery File System). Going from hierarchical to decentralised systems, Locals wants to be the solution for local organisations and governments. Using Locals, a community can operate autonomously, on a fair basis, where every entity has the same opportunities and rights."
   },
+  "whatis2tittel": {
+    "description": "...",
+    "message": "A web of trust"
+  },
+  "whatis2txt": {
+    "description": "...",
+    "message": "Locals is a web of trust. It’s a network structure containing entities. All entities interact with each other by validating each other. An entity can be a person, a house, a company, a sportsclub, a car,... By giving and receiving validations, all entities create a web of trust in the Locals network. "
+  },
   "watis3": {
     "description": "...",
     "message": "Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het"
