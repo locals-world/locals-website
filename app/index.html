@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Poezenclub">
-  <title>Welkom bij de PoezenClub</title>
+  <title></title>
 
   <!-- Place favicon.ico in the `app/` directory -->
 
@@ -72,9 +72,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <!-- SECTIE 1: header -->
             <div class="head">
                 <div class="languagepicker">
-                <iron-selector attr-for-selected="lang" selected="en" class="languagepickersel">
-                  <div lang="en" on-tap="lang_en" class="language"><h2>EN</h2></div>
-                  <div lang="nl" on-tap="lang_nl" class="language"><h2>NL</h2></div>
+                <iron-selector 
+                attr-for-selected="lang" 
+                selected="{{language}}" 
+                on-iron-select="langpick"  
+                class="languagepickersel">
+                  <div lang="en" class="language"><h2>EN</h2></div>
+                  <div lang="nl" class="language"><h2>NL</h2></div>
                 </iron-selector>
                 </div>
 

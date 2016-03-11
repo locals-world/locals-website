@@ -43,6 +43,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   document.addEventListener('HTMLImportsLoaded', function() {
     I18nMsg.lang = 'en';
+    app.language = 'en';
     I18nMsg.url = 'locales'; // optionally use custom folder for locales.
     Platform.performMicrotaskCheckpoint();
   });
@@ -82,24 +83,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   app.closeDrawer = function() {
   };
 
-  app.lang_en = function(){
-    I18nMsg.lang = 'en';
+  app.langpick = function(){
+    I18nMsg.lang = app.language;
     Platform.performMicrotaskCheckpoint();
   };
 
-  app.lang_nl = function(){
-    I18nMsg.lang = 'nl';
-    Platform.performMicrotaskCheckpoint();
-  };
-
-  app.lang_fr = function(){
-    I18nMsg.lang = 'fr';
-    Platform.performMicrotaskCheckpoint();
-  };
-
-  app.lang_ar = function(){
-    I18nMsg.lang = 'ar';
-    Platform.performMicrotaskCheckpoint();
-  };
 
 })(document);
