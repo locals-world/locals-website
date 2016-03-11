@@ -67,10 +67,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="content">
       <iron-pages attr-for-selected="data-route" selected="{{route}}">
         <section data-route="home">
-          <div class="canvaspink">
+          <div class="canvas">
 
             <!-- SECTIE 1: header -->
-            <div class="headertje">
+            <div class="head">
+                <div class="languagepicker">
+                <iron-selector attr-for-selected="lang" selected="en" class="languagepickersel">
+                  <div lang="en" on-tap="lang_en" class="language"><h2>EN</h2></div>
+                  <div lang="nl" on-tap="lang_nl" class="language"><h2>NL</h2></div>
+                </iron-selector>
+                </div>
+
+              <div class="headtitle">
+                <h1 class="maintitle"><i18n-msg msgid="sitetitle"></i18n-msg></h1>
+                <h2 class="subtitle"><i18n-msg msgid="subtitle"></i18n-msg></h2>
+              </div>
+              <div class="headimg"></div>
+            </div>
+
+<!--             <div class="headertje">
                 <div class="languagepicker">
                 <iron-selector attr-for-selected="lang" selected="en" class="languagepickersel">
                   <div lang="en" on-tap="lang_en" class="language"><h2>EN</h2></div>
@@ -78,41 +93,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </iron-selector>
                 </div>
               <div class="intro">
-
-              <div class="introvak">
-                <img src="../images/icon-512x512.png">
                 <div id="titel">
                   <h1 class="maintitle">
-                    <!-- <button on-tap="lang_fr">FR</button> -->
-                    <!-- <button on-tap="lang_ar">AR</button> -->
                     <i18n-msg msgid="sitetitle"></i18n-msg>
                   </h1>
                   <h2 class="subtitle">
                     <i18n-msg msgid="subtitle"></i18n-msg>
                   </h2>
-                  <div class="joinvlak">
-                    <p><i18n-msg msgid="intro"></i18n-msg></p>
-                    <a href="//app.poezenclub.be" class="joinbtn" target="_blank"><i18n-msg msgid="actionbutton"></i18n-msg></a>
-                  </div>
                 </div>
-              </div>
+
             </div>
-            </div>
+            <div class="imgbg"></div>
+            </div> -->
 
 
             <!-- SECTIE 2: wat is een poezenclub? -->
-            <div class="contentsectie whiteback">
-              <div class="watis">
-                <div class="onderdeel">
-                  <div class="onderdeeltxt">
-                    <h2><i18n-msg msgid="intro2"></i18n-msg></h2>
-                    <p>
-                      <i18n-msg msgid="watis"></i18n-msg>
-                    </p>
-                  </div>
-                  <img src="../images/social.png">
+            <div class="contentsectie darkback">
+              <div class="whatis">
+                    <h2><i18n-msg msgid="whatis1tittel"></i18n-msg></h2>
+                    <div class="onderdeel">
+                    <div class="onderdeeltxt">
+                      <p><i18n-msg msgid="whatis1txt"></i18n-msg></p>
+                    </div>
+                    <img src="../images/decentralised-locals.png">
+                    </div>
                 </div>
-                <div class="onderdeel">
+<!--                 <div class="onderdeel">
                   <div class="onderdeeltxt">
                     <h2><i18n-msg msgid="watis2"></i18n-msg></h2>
                     <p>
@@ -120,22 +126,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     </p>
                   </div>
                   <img src="../images/decentralised.png">
-                </div>
-                    <a class="onderdeelbtn" href="/whitepaper" class="joinbtn"><img src="../images/smallpaw.png"><i18n-msg msgid="whitepaper"></i18n-msg></a>      
+                </div> -->
+<!--                     <a class="onderdeelbtn" href="/whitepaper" class="joinbtn"><img src="../images/smallpaw.png"><i18n-msg msgid="whitepaper"></i18n-msg></a>  -->     
               </div>
             </div>
 
 
             <!-- SECTIE 3: full btn -->
-            <div class="contentsectie">
+<!--             <div class="contentsectie">
               <div class="fullink">
                 <a href="//app.poezenclub.be" target="_blank"><i18n-msg msgid="fullink"></i18n-msg></a>
               </div>
-            </div>
+            </div> -->
 
 
             <!-- SECTIE 4: Hoe werkt zo'n poezenclub? -->
-            <div class="contentsectie darkback">
+<!--             <div class="contentsectie darkback">
               <div class="hoewerkt">
                 <div class="onderdeel">
                     <h2><i18n-msg msgid="hoewerkttittel"></i18n-msg></h2>
@@ -152,12 +158,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     </p>
                   </div>
               </div>
-            </div>
+            </div> -->
 
 
 
             <!-- SECTIE 5: Technisch? -->
-            <div class="contentsectie darkerback">
+<!--             <div class="contentsectie darkerback">
               <div class="hoewerkt">
                 <div class="onderdeel">
                   <div class="technisch">
@@ -169,7 +175,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
 
               </div>
-            </div>
+            </div> -->
 
 
 
@@ -205,12 +211,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </div>
             </div>
           </div>
+
         </section>
 
 
 
 
-        <section data-route="whitepaper">
+      <!--   <section data-route="whitepaper">
 
           <paper-toolbar class="horizontal layout">
             <a href="/">< terug</a><button><a href="../images/POEZENCLUB.pdf" target="_blank">Download als pdf</a></button>  
@@ -347,7 +354,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </ul>
 
           </div>
-        </section>        
+        </section>     -->    
 
       </iron-pages>
     </div>

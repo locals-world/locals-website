@@ -23,20 +23,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    */
 
   /* Application theme */
+
+
     @font-face {
-        font-family: Indieflower;
-        src: url(../fonts/IndieFlower.ttf);
-    }
-    @font-face {
-        font-family: Lato;
-        src: url(../fonts/Lato-Regular.ttf);
+        font-family: OpensansLight;
+        src: url(../fonts/OpenSans-Light.ttf);
     }
 
     @font-face {
-        font-family: Latoitalic;
-        src: url(../fonts/Lato-Italic.ttf);
+        font-family: Opensans;
+        src: url(../fonts/OpenSans-Regular.ttf);
     }
 
+    @font-face {
+        font-family: OpensansBold;
+        src: url(../fonts/OpenSans-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: OpensansSemibold;
+        src: url(../fonts/OpenSans-Semibold.ttf);
+    }
 
  :root {
 
@@ -51,6 +58,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --black-secondtint:rgba(0,0,0,0.5);
     --black-thirdtint:rgba(0,0,0,0.2);
     --black-fourthtint:rgba(0,0,0,0.05);
+
+    --blauw-theme-color: #a8daef;
 
 
     /* COLOR BGS */
@@ -68,7 +77,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     };
     --pink-bgcolor: {
       background-color: var(--pink-theme-color);
-    };   
+    };  
+
+    --blue-bgcolor: {
+      background-color: var(--blauw-theme-color);
+    };      
 
     /* BTN COLORS */
     --btns-normalcolors: {
@@ -164,7 +177,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           src: url(../fonts/OpenSans-Light.ttf);
     }*/
     --theme-font-general: {
-      font-family: Indieflower;
+      font-family: OpensansLight;
       -webkit-font-smoothing: antialiased;
     };
 
@@ -195,7 +208,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     --theme-font-body1: {
 /*      @apply(--theme-font-general);*/
-      font-family: Lato;
+      font-family: OpensansLight;
       -webkit-font-smoothing: antialiased;
       font-size: 14px;
       font-weight: 300;
@@ -259,17 +272,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* SPECIFIC styles */
 
-    .canvaspink {
+    .canvasblue {
       @apply(--total-canvas);
-      @apply(--pink-bgcolor);
+      @apply(--blue-bgcolor);
+    }
 
+
+    .canvas {
+      @apply(--total-canvas);
     }
     .whiteback {
       background-color: white;
     }
 
     .darkback {
-      background-color: rgba(0,0,0,0.075);
+      background-color: rgba(0,0,0,0.025);
     }
 
      .darkerback {
@@ -279,6 +296,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .blackback {
       background-color: rgba(0,0,0,0.90);
       color: white;
+    }
+
+    .blueback {
+      background-color: var(--blauw-theme-color);
     }
 
     h1 {
@@ -333,17 +354,51 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     /*  SECTIE 1: header  */
 
-    .headertje {
+    .headimg {
       width: 100vw;
-      min-height: 70vh;
+      height: 50VW;
+      max-height: 500px;
+/*      background: 
+        radial-gradient(
+        rgba(0, 0, 0, 0.025), 
+        rgba(0, 0, 0, 0.075)
+        ),
+        url(../images/introotje2.png);*/
+      background: 
+        url(../images/introotje2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; 
+
+    }
+
+    .headtitle {
+      width: 100%;
+         @apply(--layout-vertical);
+      @apply(--layout-center-center);
       box-sizing:border-box;
-      padding: 0px 0px 35px 0px;
+      padding: 12vh 10vw 0vw 10vw;   
+      background-color: var(--blauw-theme-color);
+      text-align: center;
+    }
+
+    .headtitle h2 {
+      font-weight: 300;
+      font-size: 22px;
+    }
+
+
+
+/*    .headertje {
+      min-height: 70vh;
+      width: 100vw;
+      box-sizing:border-box;
       background: 
         radial-gradient(
-        rgba(0, 0, 0, 0.4), 
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.025), 
+        rgba(0, 0, 0, 0.075)
         ),
-        url(../images/IMG_3175.jpg);
+        url(../images/introotje.png);
 
       background-size: cover;
       background-repeat: no-repeat;
@@ -352,24 +407,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       @apply(--layout-center);
       }
 
-.intro {
-  width: 100%;
-  height: 100%;
-      min-height: 70vh;
+    .headertje img {
+      width: 100%;
+      }*/
 
+
+/*      .intro {
+        width: 100%;
+        height: 30%;
         @apply(--layout-vertical);
-      @apply(--layout-center-center);
-}
+        @apply(--layout-center);
+      }
 
-    .introvak {
-/*      margin: 0px 0px 35px 0px;
-*/
-      color: white;
-      @apply(--layout-horizontal);
-      @apply(--layout-center-center);
-      @apply(--layout-start);
-      @apply(--layout-wrap);
-      width: 85%;
+    .imgbg {
+        background: yellow;
+  width: 100%;
+
+  height: 70%;
+
+
     }
 
     .introprent {
@@ -385,7 +441,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #titel {
       @apply(--layout-vertical);
       @apply(--layout-start);
-    }
+    }*/
 
     .introvak img {
       height: 70px;
@@ -395,15 +451,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .maintitle {
       @apply(--theme-font-title);
-      font-size: 88px;
-      margin: 15px 0px 30px 0px;
+      font-size: 64px;
+      margin: 10px 0px 20px 0px;
+      text-align: center;
+
     }
 
     .subtitle {
       @apply(--theme-font-subhead);
       @apply(--no-edges);
       text-align: center;
-      font-size: 48px;
+      font-size: 46px;
     }
 
     .joinvlak {
@@ -440,10 +498,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
     /*  SECTIE 2: wat is een poezenclub?  */
-    .watis {
+    .whatis {
       width: 85%;
       max-width: 1050px;
       margin: 5vh 0px 5vh 0px;
+    }
+
+    .whatis h2 {
+      text-align: center;
+      margin: 20px 0px 0px 0px;
     }
 
     .onderdeel {
@@ -662,7 +725,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   .whitepaper ul,li {
-      font-family: Lato;
+      font-family: OpensansLight;
       font-weight: 300;
       font-size: 18px;
       line-height: 25px;
@@ -692,10 +755,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   .whitepaper h1 {
-      font-family: Lato;
+      font-family: OpensansLight;
   }
   .whitepaper h2 {
-      font-family: Lato;
+      font-family: OpensansLight;
   }
 
   paper-toolbar {
@@ -705,12 +768,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   paper-toolbar a {
-    font-family: Indieflower;
+    font-family: OpensansLight;
     text-decoration: none;
   }
 
   .italic {
-    font-family: Latoitalic;
+    font-family: OpensansLightitalic;
   }
 
 
@@ -724,9 +787,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   .languagepicker {
     width: 100vw;
-    background: transparent;
-    margin: 0px 0px 35px 0px;
-    padding: 0px 40px 0px 0px;
+    background-color: var(--blauw-theme-color);
+    box-sizing:border-box;
+    padding: 20px;
     @apply(--layout-horizontal);
     @apply(--layout-end-justified);
   }
@@ -738,21 +801,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   .languagepickersel .iron-selected {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.1);
     text-decoration: underline;
-    color: var(--pinktwee-theme-color);
+    color: rgba(0,0,0,0.7);
   }
 
   .language {
     @apply(--layout-horizontal);
     @apply(--layout-center-center);
-    color: var(--pink-theme-color);
+    color: white;
     width: 50px;
-    height: 40px;
-    border-radius: 0px 0px 10px 10px;
+    height: 50px;
+    border-radius: 50%;
     padding: 0px;
     cursor: pointer;
-
   }
 
 

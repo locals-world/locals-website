@@ -1,31 +1,23 @@
 {
   "sitetitle": {
     "description": "...",
-    "message": "Welkom bij de Poezenclub!"
+    "message": "Welkom bij de Locals!"
   },
   "subtitle": {
     "description": "...",
-    "message": "Een sociaal blockchain experiment"
+    "message": "Een gedecentraliseerd web van trusted entities"
   },
-  "intro": {
+  "whatis": {
     "description": "...",
-    "message": "Kom bij de poezenclub, laat je valideren door twee andere leden en ontdek alle voordelen van een gevalideerde poes."
+    "message": "What is Locals?"
   },
-  "actionbutton": {
+  "whatis1tittel": {
     "description": "...",
-    "message": "Ik wil meedoen!"
+    "message": "The concept"
   },
-  "intro2": {
+  "whatis1txt": {
     "description": "...",
-    "message": "De Poezenclub is een sociaal experiment."
-  },
-  "watis": {
-    "description": "...",
-    "message": "De poezenclub is een beta toepassing, opgezet door A-Labs, om op kleine schaal te experimenteren met gedecentraliseerde sociale tools. Door de Poezenclub leren we hoe mensen omgaan met deze nieuwe tools, hoe mensen interageren met elkaar d.m.v. de app. De onschuldigheid van de content en de beperkte functionaliteiten van de app zorgen ervoor dat we  snel leren en verbeteren. "
-  },
-  "watis2": {
-    "description": "...",
-    "message": "De Poezenclub is gedecentraliseerd."
+    "message": "Locals is the tool belt to interact with, create and sustain a local community. It’s a decentralised app, running on the Ethereum blockchain and IPFS (the InterPlantery File System). Going from hierarchical to decentralised systems, Locals wants to be the solution for local organisations and governments. Using Locals, a community can operate autonomously, on a fair basis, where every entity has the same opportunities and rights."
   },
   "watis3": {
     "description": "...",
