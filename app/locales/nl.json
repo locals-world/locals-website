@@ -27,6 +27,14 @@
     "description": "...",
     "message": "Locals is a web of trust. It’s a network structure containing entities. All entities interact with each other by validating each other. An entity can be a person, a house, a company, a sportsclub, a car,... By giving and receiving validations, all entities create a web of trust in the Locals network. "
   },
+  "whatis3tittel": {
+    "description": "...",
+    "message": "Simple interface, smart contracts"
+  },
+  "whatis3txt": {
+    "description": "...",
+    "message": "Locals aims to bring decentralised technology to a mainstream audience by using an inuitive user interface and colourfull visual style. Without the knowlegde of blockchain technology being required , Locals’ end-users can very easily interact with smart contracts on the Ethereum blockchain."
+  },
   "watis3": {
     "description": "...",
     "message": "Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het"

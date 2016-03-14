@@ -293,6 +293,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       background-color: rgba(0,0,0,0.095);
     }   
 
+     .darkestback {
+      background-color: rgba(0,0,0,0.15);
+    } 
+
     .blackback {
       background-color: rgba(0,0,0,0.90);
       color: white;
@@ -310,6 +314,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     h2 {
       @apply(--theme-font-subhead);
       margin: 10px 0px 10px 0px;
+    }
+
+    h3 {
+      @apply(--theme-font-subhead);
+      font-size: 22px;
+      margin: 0px;
     }
 
     p {
@@ -349,6 +359,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       @apply(--layout-center-center);
     }
 
+    .whitespace {
+      height: 20px;
+      width: 100%;
+
+    }
+
 
 
 
@@ -380,6 +396,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       padding: 6vh 10vw 0vw 10vw;   
       background-color: var(--blauw-theme-color);
       text-align: center;
+
     }
 
     .headtitle h2 {
@@ -559,6 +576,124 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .onderdeel img {
       width: 290px;
     }
+
+    .drieluik {
+      width: 100%;
+      @apply(--layout-horizontal);
+      @apply(--layout-start);
+      @apply(--layout-wrap);
+    }
+
+
+    .luik {
+      background-color: rgba(0,0,0,0.025); 
+      width: 31%;
+      @apply(--layout-vertical);
+      @apply(--layout-start);
+      @apply(--layout-center);
+      margin: 0px 1% 0px 1%;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .luik img {
+      width: 100%;
+      object-fit:contain;
+    }
+
+    .luikimg {
+      width: 80%;
+      padding: 30px 0px 15px 0px;
+      box-sizing:border-box;
+    }
+
+    .luiktxt {
+      width: 100%;
+      box-sizing:border-box;
+      padding: 0px 30px 0px 30px;
+/*      box-sizing:border-box;
+      padding: 30px;*/
+    }
+
+    .luiktxt h3 {
+      width: 100%;
+      text-align: center;
+      font-size: 22px;
+    }
+    .luiktxt p {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+       box-sizing:border-box;
+      padding: 10px 10px 30px 10px;     
+    }
+
+    .objdata {
+      background-color: rgba(0,0,0,0.035);
+      width: 100%;
+      box-sizing:border-box;
+      padding: 20px 0px 20px 0px;
+    }
+
+    .objdata h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      margin: 0px;
+      color: rgba(0,0,0,0.35);
+    }
+
+    .objdata p {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .objlink {
+      box-sizing:border-box;
+      padding: 15px 0px 15px 0px;
+      width: 100%;
+      background-color: #219dc8;
+      border-radius: 0px 0px 10px 10px;
+
+    }
+
+
+    .objlink:hover {
+      background-color: #006A86;
+    }
+
+    .objlink img {
+      width: 20px;
+      margin: 0px 10px 0px 10px;
+    }
+
+    .objlink a {
+      @apply(--layout-horizontal);
+      @apply(--layout-center-center);
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+/*      text-decoration: none;
+
+      margin: 10px;
+      width: 20px;*/
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /*  SECTIE 3: Lees de volledige whitepaper  */
