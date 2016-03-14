@@ -29,255 +29,99 @@
   },
   "whatis3tittel": {
     "description": "...",
-    "message": "Simple interface, smart contracts"
+    "message": "Smart contracts, simple interface"
   },
   "whatis3txt": {
     "description": "...",
-    "message": "Locals aims to bring decentralised technology to a mainstream audience by using an inuitive user interface and colourfull visual style. Without the knowlegde of blockchain technology being required , Locals’ end-users can very easily interact with smart contracts on the Ethereum blockchain.Simply put, Locals is a collection of smart objects. Each smart object has a user interface, data and a smart contract. See some examples below and find out how they can be used to coordinate a society."
+    "message": "Locals aims to bring decentralised technology to a mainstream audience by using an inuitive user interface and colourfull visual style. Without the knowlegde of blockchain technology being required , Locals’ end-users can very easily interact with smart contracts on the Ethereum blockchain."
   },
-  "watis3": {
+  "smartobjectstittel": {
     "description": "...",
-    "message": "Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het"
+    "message": "Object-orientated"
   },
-  "watis4": {
+  "smartobjectstxt": {
     "description": "...",
-    "message": ") maakt dit mogelijk. Als digitaal innovatielab wil A-Labs uitproberen hoe deze technologie een stedelijke gemeenschap kan verbeteren."
+    "message": "Simply put, Locals is a collection of smart objects. Each smart object has a user interface, data and a smart contract. See some examples below and find out how they can be used to coordinate a society."
   },
-  "whitepaper": {
+  "avatartitel": {
     "description": "...",
-    "message": "Lees de volledige whitepaper"
+    "message": "Avatar"
   },
-  "fullink": {
+  "avatardataa": {
     "description": "...",
-    "message": "Ik wil meedoen met de Poezenclub!"
+    "message": "First Name"
   },
-  "hoewerkttittel": {
+  "avatardatab": {
     "description": "...",
-    "message": "Hoe werkt die Poezenclub eigenlijk?"
+    "message": "Last Name"
   },
-  "hoewerkttxt": {
+  "avatardatac": {
     "description": "...",
-    "message": "Je wordt lid van de Poezenclub door de Poezenclub-app te openen. Als lid van de Poezenclub kan je een poes kiezen, een naam geven en ze laten valideren door reeds gevalideerde poezen. Na twee validaties is je poes gevalideerd. Je kan nu de Poezendoos openen en ook zelf twee andere poezen valideren."
-  },  
-  "technisch1": {
-    "description": "...",
-    "message": "Meer technische details?"
-  },  
-  "technischlink1": {
-    "description": "...",
-    "message": "Lees de volledige whitepaper"
-  },  
-  "technischlink2": {
-    "description": "...",
-    "message": "Bekijk de PoezenClub Github"
+    "message": "Birth Place"
   },
-  "kitty": {
+  "avatardatad": {
     "description": "...",
-    "message": "Poezenclub"
-  },  
+    "message": "Birth Date"
+  },
+  "avatartxt": {
+    "description": "...",
+    "message": "lorem ipsum dolor amet avatar similus octolo kukihar ipsum dolor amet avatar similus octolo kukihar"
+  },
+  "huistitel": {
+    "description": "...",
+    "message": "Residence"
+  },
+  "huisdataa": {
+    "description": "...",
+    "message": "First Name"
+  },
+  "huisdatab": {
+    "description": "...",
+    "message": "Last Name"
+  },
+  "huisdatac": {
+    "description": "...",
+    "message": "Birth Place"
+  },
+  "huisdatad": {
+    "description": "...",
+    "message": "Birth Date"
+  },
+  "huistxt": {
+    "description": "...",
+    "message": "lorem ipsum dolor amet huis similus octolo kukihar ipsum dolor amet avatar similus octolo kukihar"
+  },
+  "kattitel": {
+    "description": "...",
+    "message": "Pet"
+  },
+  "katdataa": {
+    "description": "...",
+    "message": "First Name"
+  },
+  "katdatab": {
+    "description": "...",
+    "message": "Last Name"
+  },
+  "katdatac": {
+    "description": "...",
+    "message": "Birth Place"
+  },
+  "katdatad": {
+    "description": "...",
+    "message": "Birth Date"
+  },
+  "kattxt": {
+    "description": "...",
+    "message": "lorem ipsum dolor amet huis similus octolo kukihar ipsum dolor amet avatar similus octolo kukihar"
+  },
+  "gitlink": {
+    "description": "...",
+    "message": "Check out on Github"
+  },
   "endmsg1": {
     "description": "...",
-    "message": "De Poezenclub werd bedacht en uitgewerkt door A-Labs, het digitale innovatie-lab binnenin Stad Antwerpen."
-  },  
-  "endmsg2": {
-    "description": "...",
-    "message": "maart"
-  },  
-  "whitepaperhoofdtitel": {
-    "description": "...",
-    "message": "Een social blockchain experiment"
-  },  
-  "whitepapertitel1": {
-    "description": "...",
-    "message": "Wat is de Poezenclub?"
-  },  
-  "whitepaperondertitel1": {
-    "description": "...",
-    "message": "De Poezenclub is een sociaal experiment."
-  },  
-  "whitepapertxt1": {
-    "description": "...",
-    "message": "De Poezenclub is een beta toepassing, opgezet door A-Labs, om op kleine schaal te experimenteren met gedecentraliseerde sociale tools. Door de Poezenclub leren we hoe mensen omgaan met deze nieuwe tools, hoe mensen interageren met elkaar d.m.v. de app. De onschuldigheid van de content en de beperkte functionaliteiten van de app zorgen ervoor dat we  snel leren en verbeteren."
-  },  
-  "whitepaperondertitel1b": {
-    "description": "...",
-    "message": "De Poezenclub is gedecentraliseerd."
-  },  
-  "whitepapertxt1b": {
-    "description": "...",
-    "message": "Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het Ethereum-protocol) maakt dit mogelijk. Als digitaal innovatielab wil A-Labs uitproberen hoe deze technologie een stedelijke gemeenschap kan verbeteren."
-  },  
-  "whitepapertitel2": {
-    "description": "...",
-    "message": "Hoe werkt de Poezenclub?"
-  },  
-  "whitepaperondertitel2": {
-    "description": "...",
-    "message": "Het concept"
-  },  
-  "whitepapertxt2": {
-    "description": "...",
-    "message": "Je wordt lid van de Poezenclub door de Poezenclub-app te openen. Als lid van de Poezenclub kan je een poes kiezen, een naam geven en ze laten valideren door reeds gevalideerde poezen. Na twee validaties is je poes gevalideerd. Je kan nu de Poezendoos openen en ook zelf twee andere poezen valideren."
-  },  
-  "whitepaperondertitel2b": {
-    "description": "...",
-    "message": "Enkele technische basisbegrippen"
-  },  
-  "whitepapertech1txt": {
-    "description": "...",
-    "message": "Een gedistribueerde database die verdeeld is over het volledige netwerk en onderhouden wordt door miners die alle transacties herberekenen. Door de combinatie van gedecentraliseerde architectuur, encryptie en verificatie door de miners coördineert de blockchain de instemming van alle partijen."
-  },  
-  "whitepapertech2txt": {
-    "description": "...",
-    "message": "Een gedecentraliseerd platform voor smart contracts die applicaties draaien zonder tussenpersonen en zonder risico op downtime, censuur, fraude."
-  },  
-  "whitepapertech3txt": {
-    "description": "...",
-    "message": "De cryptocurrency van Ethereum, die nodig is om smart contracts uit te voeren. De miners in Ethereum worden hierin betaald voor hun rekenwerk dus ether wordt gezien als de olie die de machine doet draaien."
-  },  
-  "whitepapertech4txt": {
-    "description": "...",
-    "message": "Computerprotocols die de onderhandeling of de uitvoering van een contract faciliteren, verifiëren of bekrachtigen."
-  },  
-  "whitepapertech5txt": {
-    "description": "...",
-    "message": "Een protocol om machines met machines te laten praten."
-  },  
-  "whitepaperondertitel3": {
-    "description": "...",
-    "message": "Technische omschrijving per actie"
-  },  
-  "whitepaperactie1titel": {
-    "description": "...",
-    "message": "Ik open de app"
-  },
-  "whitepaperactie1txta": {
-    "description": "...",
-    "message": "Er wordt lokaal op mijn toestel een wallet aangemaakt met public en private key en een account balance."
-  },
-    "whitepaperactie1txtb": {
-    "description": "...",
-    "message": "Op het membershipcontract in Ethereum wordt een nieuwe lijn toegevoegd, waarin mijn account als nieuw lid word toegevoegd."
-  },
-  "whitepaperactie1txtc": {
-    "description": "...",
-    "message": "Er wordt in Ethereum een validatiecontract aangemaakt voor mijn account."
-  },
-    "whitepaperactie1txtd": {
-    "description": "...",
-    "message": "Ik ontvangt 1 ether in mijn wallet."
-  },  
-  "whitepaperactie2titel": {
-    "description": "...",
-    "message": "Ik kies een naam en foto voor mijn kat"
-  },
-  "whitepaperactie2txta": {
-    "description": "...",
-    "message": "Deze gegevens worden lokaal op mijn toestel bewaard."
-  },  
-  "whitepaperactie3titel": {
-    "description": "...",
-    "message": "Om mijn poes te laten valideren, vraag ik de pincode van een lid met een gevalideerde poes"
-  },
-  "whitepaperactie3txta": {
-    "description": "...",
-    "message": "Er wordt over MQTT een bericht gestuurd naar het topic “.../pincode-validator”. In dit bericht staat de foto en de naam van mijn te valideren kat, het commando “valideer mij”, mijn pincode en mijn validatiecontractadres."
-  },
-    "whitepaperactie3txtb": {
-    "description": "...",
-    "message": "De validator ontvangt over MQTT van het topic “.../pincode-validator” dit bericht en ziet in de app de te valideren gegevens."
-  },  
-  "whitepaperactie4titel": {
-    "description": "...",
-    "message": "Validator bevestigt in de app mijn gegevens"
-  },
-  "whitepaperactie4txta": {
-    "description": "...",
-    "message": "Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-aanvrager”.  In dit bericht staat de boodschap “validatie ok”."
-  },
-    "whitepaperactie4txtb": {
-    "description": "...",
-    "message": "Op mijn validatiecontract wordt +1 validatie toegevoegd."
-  },
-  "whitepaperactie4txtc": {
-    "description": "...",
-    "message": "Er wordt 1 ether van de wallet van de validator naar mijn wallet gestuurd, m.a.w. het kost 1 ether om iemand te valideren."
-  },
-    "whitepaperactie4txtd": {
-    "description": "...",
-    "message": "Over MQTT wordt naar mij verstuurd dat de validator bevestigd heeft."
-  },  
-  "whitepaperactie5titel": {
-    "description": "...",
-    "message": "Ik vraag een tweede validatie aan een ander lid met een gevalideerde poes"
-  },
-  "whitepaperactie5txta": {
-    "description": "...",
-    "message": "Alle stappen zoals hierboven beschreven worden herhaald."
-  },
-    "whitepaperactie5txtb": {
-    "description": "...",
-    "message": "Eens er twee validaties op het validatiecontract staan, worden nieuwe functies in de app ontsloten: openen van de doos, zelf kunnen valideren."
-  },  
-  "whitepaperactie6titel": {
-    "description": "...",
-    "message": "Om de doos te openen, voer ik in de app de pincode van de doos in"
-  },
-  "whitepaperactie6txta": {
-    "description": "...",
-    "message": "Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-doos”. In dit bericht staat mijn validatiecontractadres, mijn pincode en het commando “check contract”."
-  },
-    "whitepaperactie6txtb": {
-    "description": "...",
-    "message": "De doos ontvangt dit bericht en checkt het aantal validaties op mijn validatiecontract."
-  },
-  "whitepaperactie6txtc": {
-    "description": "...",
-    "message": "Staan er 2 validaties op mijn validatiecontract, dan opent de doos."
-  },
-    "whitepaperactie6txtd": {
-    "description": "...",
-    "message": "Een nieuwe pincode voor de doos worden aangemaakt."
-  },  
-  "whitepaperactie7titel": {
-    "description": "...",
-    "message": "Ik sluit de doos"
-  },
-  "whitepaperactie7txta": {
-    "description": "...",
-    "message": "Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-doos”. In dit bericht staat het het commando “sluit doos”. De doos ontvangt dit bericht en sluit."
-  },  
-  "whitepapertitel8": {
-    "description": "...",
-    "message": "Social economics in de Poezenclub"
-  },  
-  "whitepaperondertitel8": {
-    "description": "...",
-    "message": "De waarde van het valideren"
-  },  
-  "whitepapertxt8a": {
-    "description": "...",
-    "message": "Een gedecentraliseerd netwerk moet op zichzelf kunnen bestaan en verder uitbreiden, zonder onderhoud van een centrale partij. Daarom kost in het Ethereum protocol elke transactie met een smart contract een kleine hoeveelheid ether, een soort transactiekost betaald door het netwerk."
-  },  
-  "whitepapertxt8b": {
-    "description": "...",
-    "message": "Wij gaan voor het Poezenclub-netwerk een stap verder en voeren social economics in: we geven een waarde aan het valideren, nl. 1 validatie = 1 ether. Het kost de validator 1 ether om een poes te valideren. De te valideren poes ontvangt deze ether. Op deze manier zorgen we ervoor dat alle nodes gelijkwaardig zijn in het netwerk en kan geen enkele node een belangrijkere of meer centrale positie krijgen in het netwerk (vb. één node die 100 validaties uit zou voeren)."
-  },  
-  "whitepapertxt8c": {
-    "description": "...",
-    "message": "Concreet krijgt elk nieuw lid van de Poezenclub bij aanmaak van zijn account 1,005 ether in zijn wallet. Per validatie krijgt hij er 1 ether bij. Met een volledig gevalideerde poes heeft dit lid in zijn wallet dus 3,1 ether: 1,1 (aanmaak account) + 1 (eerste validatie) + 1 (tweede validatie). Met deze 3,1 ether kan hij op zijn beurt 3 nieuwe poezen valideren. Zonder ether kan er niet gevalideerd worden, dus elk lid van de Poezenclub (met een gevalideerde poes) kan maximaal 3 andere poezen valideren. Met dit ingebouwd mechanisme van social economics bewaart de Poezenclub zijn decentrale netwerkstructuur."
-  },  
-  "whitepapertitel9": {
-    "description": "...",
-    "message": "Wat willen we leren uit de Poezenclub?"
-  },  
-  "whitepaperondertitel9": {
-    "description": "...",
-    "message": "Werken alle technische componenten?"
-  },  
-  "whitepaperondertitel9": {
-    "description": "...",
-    "message": "Werken alle technische componenten?"
+    "message": "Locals was created and developed by A-Labs, the digital innovation lab of City of Antwerp."
   }
 }
 
