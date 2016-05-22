@@ -138,7 +138,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                           <img src="../images/objectavatar3.png">
                         </div>
                         <div class="luiktxt">
-                          <h3>Object <i18n-msg msgid="avatartitel"></i18n-msg></h3>
+                          <h3><i18n-msg msgid="avatartitel">Avatar</i18n-msg></h3>
                           <p><i18n-msg msgid="avatartxt"></i18n-msg></p>
                         </div>
                         <div class="objdata">
@@ -156,7 +156,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                           <img src="../images/objecthuis3.png">
                         </div>
                         <div class="luiktxt">
-                          <h3>Object <i18n-msg msgid="huistitel"></i18n-msg></h3>
+                          <h3><i18n-msg msgid="huistitel">Residence</i18n-msg></h3>
                           <p><i18n-msg msgid="huistxt"></i18n-msg></p>
                         </div>
                         <div class="objdata">
@@ -174,15 +174,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                           <img src="../images/objectkat3.png">
                         </div>
                         <div class="luiktxt">
-                          <h3>Object <i18n-msg msgid="kattitel"></i18n-msg></h3>
-                          <p><i18n-msg msgid="kattxt"></i18n-msg></p>
+                          <h3><i18n-msg msgid="kattitel">Pet</i18n-msg></h3>
+                          <p><i18n-msg msgid="kattxt">A local community has decided it should incentivize cat owners to get their cat sterilized. The community has created a new smart contract: "if your pet lives in our community, and is not sterilized yet, the community fund sends localcoins to your pet’s contract". These coins can only be used to pay for an animal care professional who is validated by members of the community. The pet can then get itself sterilized, and pay the animal care professional.</i18n-msg></p>
                         </div>
                         <div class="objdata">
                           <h2>DATA</h2>
-                          <p><i18n-msg msgid="katdataa"></i18n-msg></p>
-                          <p><i18n-msg msgid="katdatab"></i18n-msg></p>
-                          <p><i18n-msg msgid="katdatac"></i18n-msg></p>
-                          <p><i18n-msg msgid="katdatad"></i18n-msg></p>
+                          <p><i18n-msg msgid="katdataa">Name</i18n-msg></p>
+                          <p><i18n-msg msgid="katdatab">Birthdate</i18n-msg></p>
+                          <p><i18n-msg msgid="katdatac">Sex</i18n-msg></p>
+                          <p><i18n-msg msgid="katdatad">Propagation status</i18n-msg></p>
+                          <p><i18n-msg msgid="katdatad">Transaction history</i18n-msg></p>
                         </div>
                         <div class="objlink"><a href=""><img src="../images/GitHub-Mark_40x40.svg"><i18n-msg msgid="gitlink"></a></div>
                     </div>
@@ -250,7 +251,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="einde">
                       <div class="contact">
                         <div class="contactlogo">
-                        <img src="../images/gitterlogo.jpg"><a href="//gitter.im/A-Labs/comms">gitter.im/A-Labs/comms</a>
+                        <img src="../images/gitterlogo.jpg"><a href="https://gitter.im/A-Labs/comms">gitter.im/A-Labs/comms</a>
                         </div> 
                         <template is="dom-if" if="{{queryMatches}}"><p class="tussenschot semitransparant">|</p></template>
                         <div class="contactlogo">
@@ -259,8 +260,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         </div>
                         <template is="dom-if" if="{{queryMatches}}"><p class="tussenschot semitransparant">|</p></template>
                         <div class="contactlogo">
-                        <img src="../images/GitHub-Mark_40x40.svg"><a href="//github.com/locals-world">Github Locals</a>
+                        <img src="../images/GitHub-Mark_40x40.svg"><a href="https://github.com/locals-world">Github Locals</a>
                         </div>
+                        <template is="dom-if" if="{{queryMatches}}"><p class="tussenschot semitransparant">|</p></template>
+                        <div class="contactlogo">
+                          <img src="../images/GitHub-Mark_40x40.svg"><a target="blank" href="https://github.com/locals-world/locals-project/wiki">Github Project Wiki</a></div>
                       </div>
                      <h1 class="semitransparant">Locals</h1>
                         <img src="../images/A-LabsLogo-white.svg" class="logotje">

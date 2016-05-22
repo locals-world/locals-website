@@ -5,23 +5,23 @@
   },
   "subtitle": {
     "description": "...",
-    "message": "Een gedecentraliseerd web van trusted entities"
+    "message": "Een decentraal web van trusted entities"
   },
   "whatis": {
     "description": "...",
-    "message": "What is Locals?"
+    "message": "Wat is Locals?"
   },
   "whatis1tittel": {
     "description": "...",
-    "message": "The concept"
+    "message": "Het concept"
   },
   "whatis1txt": {
     "description": "...",
-    "message": "Locals is the tool belt to interact with, create and sustain a local community. It’s a decentralised app, running on the Ethereum blockchain and IPFS (the InterPlantery File System). Going from hierarchical to decentralised systems, Locals wants to be the solution for local organisations and governments. Using Locals, a community can operate autonomously, on a fair basis, where every entity has the same opportunities and rights."
+    "message": "Locals is het gereedschap waarmee je een lokale gemeenschap kan bouwen en onderhouden. Het is een decentrale app, die op de Ethereum blockchain en IPFS werkt. Locals wil helpen om de oplossing te zijn voor lokale gemeenschappen en overheden om van een sterk hiërarchicsch naar een decentraal systeem te gaan. Door Locals te gebruiken kan een gemeenschap autonoom bestaan, eerlijk en transparant, waar elke speler gelijke kansen en rechten heeft."
   },
   "whatis2tittel": {
     "description": "...",
-    "message": "A web of trust"
+    "message": "Een web van vertrouwen"
   },
   "whatis2txt": {
     "description": "...",
@@ -29,11 +29,11 @@
   },
   "whatis3tittel": {
     "description": "...",
-    "message": "Simple interface, smart contracts"
+    "message": "Slimme contracten, eenvoudig in gebruik"
   },
   "whatis3txt": {
     "description": "...",
-    "message": "Locals aims to bring decentralised technology to a mainstream audience by using an inuitive user interface and colourfull visual style. Without the knowlegde of blockchain technology being required , Locals’ end-users can very easily interact with smart contracts on the Ethereum blockchain."
+    "message": "Locals wil decentrale technologie tot bij de gewone man brengen. Het gebruikt een eenvoudige en intuïtieve interface met een kleurrijke visuele stijl. Zonder ook maar iets van blockchain technologie te kennen, kunnen de gebruikers van Locals gebruik maken van Slimme Contracten op de Ethereum blockchain."
   },
   "watis3": {
     "description": "...",
