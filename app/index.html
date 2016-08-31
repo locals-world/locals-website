@@ -72,24 +72,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <!-- SECTIE 1: header -->
             <div class="head">
                 <div class="languagepicker">
-                  <div class="toplinks">
-                    <div class="contactlogo">
-                      <a href="https://locals-hq.slack.com" target="blank"><img src="../images/Slack-Mark.png"></a>
-                    </div> 
-                    <div class="contactlogo">
-                      <a href="https://github.com/locals-world"><img src="../images/GitHub-Mark_40x40-black.svg"></a>
-                    </div> 
-                  </div>
-
                 <div class="flex"></div>
-                <iron-selector 
+
+<!--                 <iron-selector 
                 attr-for-selected="lang" 
                 selected="{{language}}" 
                 on-iron-select="langpick"  
                 class="languagepickersel">
                   <div lang="en" class="language"><h2>EN</h2></div>
                   <div lang="nl" class="language"><h2>NL</h2></div>
-                </iron-selector>
+                </iron-selector> -->
+
+                  <div class="toplinks">
+                    <div class="contactlogotop">
+                      <a href="https://locals-hq.slack.com" target="blank"><img src="../images/Slack-Mark.png"></a>
+                    </div> 
+                    <div class="contactlogotop">
+                      <a href="https://github.com/locals-world"><img src="../images/GitHub-Mark_40x40-black.svg"></a>
+                    </div> 
+                    <div class="contactlogotop">
+                      <a href="mailto:hello@locals-foundation.com" target="_top">
+                      <img src="../images/mail-white.svg">
+                      </a>
+                    </div>
+                  </div>
+
                 </div>
               <div class="headtitle">
                 <h1 class="maintitle"><i18n-msg msgid="sitetitle"></i18n-msg></h1>
@@ -114,7 +121,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     </div>
 
                     <div class="rightfloatertxt"> -->
-                      <p><i18n-msg msgid="whatisalocal1txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocallink1"></i18n-msg></a><i18n-msg msgid="whatisalocal2txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocallink2"></i18n-msg></a><i18n-msg msgid="whatisalocal3txt"></i18n-msg></p>
+                      <p><i18n-msg msgid="whatisalocal1txt"></i18n-msg><a href="/#localcommunity"><i18n-msg msgid="whatisalocallink1"></i18n-msg></a><i18n-msg msgid="whatisalocal2txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocallink2"></i18n-msg></a><i18n-msg msgid="whatisalocal3txt"></i18n-msg></p>
 <!--                     </div> -->
 
                   
@@ -157,7 +164,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <div class="contentsectie darkback">
               <div class="contentpart">
                 <div class="part">
-                  <h3><i18n-msg msgid="whatisalocalcommunity"></i18n-msg></h3>
+                  <h3 name="localcommunity"><i18n-msg msgid="whatisalocalcommunity"></i18n-msg></h3>
                   <p><i18n-msg msgid="whatisalocalcommunity1txt"></i18n-msg> <a href=""><i18n-msg msgid="whatisalocalcommunitylink1"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity2txt"></i18n-msg></p><br>
                   <p><i18n-msg msgid="whatisalocalcommunity3txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity4txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocalcommunitylink3"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity5txt"></i18n-msg></p>
 
