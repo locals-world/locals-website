@@ -34,6 +34,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   // have resolved and content has been stamped to the page
   app.addEventListener('dom-change', function() {
     console.log('Our app is ready to rock!');
+    app.activelocals = '458';
   });
 
   // See https://github.com/Polymer/polymer/issues/1381
@@ -42,8 +43,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   });
 
   document.addEventListener('HTMLImportsLoaded', function() {
-    I18nMsg.lang = 'en';
-    app.language = 'en';
+    I18nMsg.lang = 'nl';
+    app.language = 'nl';
     I18nMsg.url = 'locales'; // optionally use custom folder for locales.
     Platform.performMicrotaskCheckpoint();
   });
@@ -87,6 +88,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     I18nMsg.lang = app.language;
     Platform.performMicrotaskCheckpoint();
   };
+
+
 
 
 })(document);

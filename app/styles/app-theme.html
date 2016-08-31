@@ -48,16 +48,50 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
  :root {
 
     /* COLORS */
-    --primary-theme-color: #B9E6AA;
-    --secondary-theme-color: #2192DE;
-    --third-theme-color: #D95D5D;
-    --fourth-theme-color: #D9BA5D;
-    --pink-theme-color: #EBAFA0;
-    --pinktwee-theme-color: #D18E7D;
-    --black-firsttint:rgba(0,0,0,0.7);
-    --black-secondtint:rgba(0,0,0,0.5);
-    --black-thirdtint:rgba(0,0,0,0.2);
-    --black-fourthtint:rgba(0,0,0,0.05);
+    --locals-green: #78B47A;
+    --locals-green-dark: #71A871;
+    --locals-green-darker: #679967;
+
+    --locals-red: #C95B50;
+    --locals-red-dark: #BC504B;
+    --locals-red-darker: #933F3B;
+
+    --locals-yellow: #ECAD5F;
+    --locals-yellow-dark: #E0A15C;
+    --locals-yellow-darker: #D19656;
+
+    --locals-purple: #965096;
+    --locals-purple-dark: #874A89;
+    --locals-purple-darker: #79427A;
+
+    --locals-darkblue: #006A86;
+    --locals-darkblue-dark: #00637A;
+    --locals-darkblue-darker: #00576B;
+
+    --locals-blue: #219DC8;
+    --locals-blue-dark: #209BBC;
+    --locals-blue-darker: #1E8EAD;
+
+    --locals-lightblue: #1EC3F8;
+    --locals-lightblue-dark: #20C6ED;
+    --locals-lightblue-darker: #1DB9DD;
+
+    --locals-semiblue: #CAE3E5;
+    --locals-semigreen: #DAE8DB;
+
+    
+
+    --locals-white: #FFFFFF;
+
+    --locals-grey1: #F5F5F5;
+    --locals-grey2: #EAEAEA;
+    --locals-grey3: #E0E0E0;
+    --locals-grey4: #CCCCCC;
+    --locals-grey5: #B2B2B2;
+    --locals-grey6: #999999;
+    --locals-grey7: #666666;
+
+    --locals-darkgrey: #333333;
 
     --blauw-theme-color: #a8daef;
 
@@ -330,11 +364,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     a {
-      color: black;
+      color: #219dc8;
       font-weight: 400;
       @apply(--theme-font-body1);
       font-size: 18px;
       line-height: 28px;
+      text-decoration: none;
+/*      background-color: rgba(0,0,0,0.05);
+      padding: 0px 2px 0px 2px;*/
+
     }
 
 
@@ -347,6 +385,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .underlined {
       text-decoration: underline;
+    }
+
+    .flex {
+      @apply(--layout-flex);
     }
 
     .bolder {
@@ -365,45 +407,58 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     }
 
+    .toplinks {
+      @apply(--layout-horizontal);
+      @apply(--layout-center-center);
+      }
 
 
+
+    .toplinks a {
+        opacity: 0.85;
+      }
+
+
+    .toplinks a:hover {
+        opacity: 1;
+      }
 
     /*  SECTIE 1: header  */
 
     .headimg {
       width: 100vw;
-      height: 50VW;
-      max-height: 500px;
-/*      background: 
-        radial-gradient(
-        rgba(0, 0, 0, 0.025), 
-        rgba(0, 0, 0, 0.075)
-        ),
-        url(../images/introotje2.png);*/
-      background: 
-        url(../images/introotje2.png);
-      background-size: cover;
+      height: 370px;
+      background-size: auto 100%;
+      background: url(../images/website-test2-BG.png),
+        linear-gradient(0deg, #FFFFFF 36%, #a8daef 36%)
+        ;
       background-repeat: no-repeat;
       background-position: center; 
+
+      @apply(--layout-horizontal);
+      @apply(--layout-start);
+
+      @apply(--layout-center-justified);   
 
     }
 
     .headtitle {
       width: 100%;
-         @apply(--layout-vertical);
-      @apply(--layout-center-center);
-      box-sizing:border-box;
-      padding: 6vh 10vw 0vw 10vw;   
       background-color: var(--blauw-theme-color);
       text-align: center;
 
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+
+      box-sizing:border-box;
+      padding: 6vh 10vw 0vh 10vw;   
     }
 
-    .headtitle h2 {
-      font-weight: 300;
-      font-size: 22px;
-    }
 
+    .actionbtn {
+      margin: 3px 0vw 40px 0vw;   
+      background-color: var(--locals-blue);
+    }
 
 
 /*    .headertje {
@@ -469,16 +524,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .maintitle {
       @apply(--theme-font-title);
       font-size: 64px;
-      margin: 10px 0px 20px 0px;
+      margin: 35px 0px 20px 0px;
       text-align: center;
 
     }
 
     .subtitle {
-      @apply(--theme-font-subhead);
-      @apply(--no-edges);
+      font-family: OpensansBold;
+      -webkit-font-smoothing: antialiased;
+      line-height: 22px;
+      margin: 8px 0px 40px 0px;
       text-align: center;
-      font-size: 46px;
+      font-size: 16px;
     }
 
     .joinvlak {
@@ -514,18 +571,62 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
 
-    /*  SECTIE 2: wat is een poezenclub?  */
-    .whatis {
-      width: 85%;
+    /*  CONTENTSTUK  */
+
+    .contentpart {
+      width: 80%;
       max-width: 1050px;
-      margin: 5vh 0px 5vh 0px;
+      box-sizing: border-box;
+      padding: 0vh 4vw 6vh 4vw;
     }
 
-    .whatis h2 {
-      text-align: center;
-      margin: 20px 0px 20px 0px;
+    .topcontent {
+      box-sizing: border-box;
+      padding-top: 6vh;      
+    }
+    .contentpart h3 {
+      font-family: OpensansLight;
+/*      color: var(--locals-blue);*/
+      color: rgba(0,0,0,0.35);
+      font-size: 24px;
+      line-height: 30px;
+      margin: 0px 0px 8px 0px;
+    }
+    .part {
+      width: 100%;
+      @apply(--layout-vertical);
     }
 
+
+
+    .rightfloater {
+      width: 100%;
+      @apply(--layout-horizontal);
+      @apply(--layout-wrap);
+
+    }
+    .rightfloatertxt {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .rightfloaterimg {
+      width: 80px;
+    }
+
+    .rightfloaterimg img {
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .bigwhitespace {
+      width: 100%;
+      height: 5vh;
+    }
+
+
+/*
     .onderdeel {
       width: 100%;
       @apply(--layout-horizontal);
@@ -540,7 +641,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       text-align: left;
       margin: 0px 0px 20px 0px;
 
-    }
+    }*/
 
     .onderdeelbtn {
       outline: 0; 
@@ -756,10 +857,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       @apply(--layout-center-center);
 
       text-align: center;
+      padding-bottom: 5vh;
     }
 
     .einde h1 {
-      margin: 20px 0px 20px 0px;
+      margin: 0px 0px 20px 0px;
+      font-size: 40px;
     }
 
     .einde a {
@@ -770,6 +873,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .semitransparant {
       opacity: 0.35;
     }
+
 
     .contact {
       @apply(--layout-horizontal);
@@ -914,11 +1018,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
 
+  .brand {
+    width: 100%;
+    @apply(--layout-vertical);
+    @apply(--layout-center-center);    
+  }
+
+
+    .einde p {
+      font-size: 14px;
+      line-height: 20px;
+    
+    }
+
   .logotje {
-    width: 50px;
-    height: 50px;
-    opacity: 0.35;
-    margin: 0px 0px 20px 0px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.15;
+    margin: 0px 0px 0px 0px;
   }
 
 
@@ -926,7 +1043,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     width: 100vw;
     background-color: var(--blauw-theme-color);
     box-sizing:border-box;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     @apply(--layout-horizontal);
     @apply(--layout-end-justified);
   }
@@ -938,17 +1055,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   .languagepickersel .iron-selected {
-    background-color: rgba(0,0,0,0.1);
+    font-family: OpensansBold;
+/*    background-color: rgba(0,0,0,0.1);*/
     text-decoration: underline;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,1);
   }
 
   .language {
+    font-family: Opensans;
     @apply(--layout-horizontal);
     @apply(--layout-center-center);
-    color: white;
-    width: 50px;
-    height: 50px;
+    color: rgba(0,0,0,0.6);
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     padding: 0px;
     cursor: pointer;
@@ -957,7 +1076,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
   .language h2 {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   /* Tablet+ */
@@ -977,17 +1096,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   @media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
 
     .headtitle {
-      padding: 12vh 10vw 0vw 10vw;   
+      padding: 5vh 10vw 0vw 10vw;   
     }
 
     .maintitle {
-      font-size: 52px;
+      font-size: 40px;
+      line-height: 46px;
       text-align: center;
       margin: 10px 0px 15px 0px;
     }
-    .subtitle {
+/*    .subtitle {
       font-size: 28px;
-    }
+    }*/
     .introvak img {
       margin-right: 0px;
     }
@@ -1009,6 +1129,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
 
+    .headimg {
+      height: 320px;
+    }
+
+    .actionbtn {
+      margin: 12px 0vw 40px 0vw;   
+    }
+
 
   }
 
@@ -1018,17 +1146,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
     .headtitle {
-      padding: 12vh 10vw 0vw 10vw;   
+      padding: 6vh 10vw 0vw 10vw;   
     }
 
-
     .maintitle {
-      font-size: 52px;
+      font-size: 40px;
+      line-height: 46px;
       text-align: center;
       margin: 10px 0px 15px 0px;
     }
     .subtitle {
-      font-size: 28px;
+      margin: 8px 0px 30px 0px;
     }
     .introvak {
       box-sizing:border-box;
@@ -1070,7 +1198,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin: 20px 0px 20px 0px;
     }
 
+    .headimg {
+      height: 320px;
+    }
 
+    .actionbtn {
+      margin: 12px 0vw 40px 0vw;   
+    }
 
   }
   /* mobile-small-landscape */
@@ -1098,8 +1232,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   /* desktop-medium */
   @media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) { }
   /* desktop-large */
-  @media all and (min-width: 1281px) and (max-width: 1600px) { }
+
+
+  @media all and (min-width: 1281px) and (max-width: 1600px) {
+    .contentpart {
+      max-width: 1150px;
+    }
+  }
   /* desktop-xlarge */
-  @media all and (min-width: 1601px) and (max-width: 1920px) { }
+  @media all and (min-width: 1601px) and (max-width: 1920px) {
+    .contentpart {
+      max-width: 1250px;
+    }
+  }
 </style>
 
