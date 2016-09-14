@@ -79,8 +79,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --locals-semiblue: #CAE3E5;
     --locals-semigreen: #DAE8DB;
 
-    
-
     --locals-white: #FFFFFF;
 
     --locals-grey1: #F5F5F5;
@@ -90,137 +88,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --locals-grey5: #B2B2B2;
     --locals-grey6: #999999;
     --locals-grey7: #666666;
-
     --locals-darkgrey: #333333;
-
     --blauw-theme-color: #a8daef;
 
-
-    /* COLOR BGS */
-    --primary-bgcolor: {
-      background-color: var(--primary-theme-color);
-    };
-    --secondary-bgcolor: {
-      background-color: var(--secondary-theme-color);
-    };
-    --third-bgcolor: {
-      background-color: var(--third-theme-color);
-    };
-    --fourth-bgcolor: {
-      background-color: var(--fourth-theme-color);
-    };
-    --pink-bgcolor: {
-      background-color: var(--pink-theme-color);
-    };  
-
-    --blue-bgcolor: {
-      background-color: var(--blauw-theme-color);
-    };      
-
-    /* BTN COLORS */
-    --btns-normalcolors: {
-      background-color: var(--black-firsttint);
-      color: white;
-    };    
-    --btns-hovercolors: {
-      background-color: rgba(0,0,0,1);
-    }; 
-
-    --btns-altcolors: {
-      background-color: var(--black-fourthtint);
-      color: black;
-    };    
-    --btns-hoveraltcolors: {
-      background-color: var(--black-thirdtint);
-    }; 
-
-    /* BTNS STUFF */
-    --clean-btn: {
-      border: none;
-      outline: 0; 
-      margin: 5px 5px 5px 0px;
-      box-sizing:border-box;
-      border-radius: 8px;
-      cursor: pointer;
-      @apply(--theme-font-button);
-    };
-
-    --main-btn: {
-      @apply(--clean-btn);
-      @apply(--btns-normalcolors);
-      padding: 20px;
-      font-size: 24px;
-    };
-
-
-    --main2-btn: {
-      @apply(--clean-btn);
-      @apply(--btns-altcolors);
-      padding: 20px;
-      font-size: 24px;
-    };
-
-    --medium-btn: {
-      @apply(--clean-btn);
-      @apply(--btns-normalcolors);
-      padding: 20px;
-      font-size: 16px;      
-    };
-
-    --small-btn: {
-      @apply(--clean-btn);
-      @apply(--btns-altcolors);
-      padding: 15px;
-      font-size: 12px;      
-    };
-
-
-
-    --canvas-primary: {
-      @apply(--total-canvas);
-      @apply(--primary-bgcolor);
-    };
-    --canvas-secondary: {
-      @apply(--total-canvas);
-      @apply(--secondary-bgcolor);
-    };
-    --canvas-third: {
-      @apply(--total-canvas);
-      @apply(--third-bgcolor);
-    };
-    --canvas-fourth: {
-      @apply(--total-canvas);
-      @apply(--fourth-bgcolor);
-    };
-    --canvas-pink: {
-      @apply(--total-canvas);
-      @apply(--pink-bgcolor);
-    };
-
-
-
-
-
-
-
-    /* TYPO */
-
-    /* when using fonts locally stored */
-    /* @font-face {
-          font-family: OpensansLight;
-          src: url(../fonts/OpenSans-Light.ttf);
-    }*/
     --theme-font-general: {
       font-family: OpensansLight;
       -webkit-font-smoothing: antialiased;
     };
 
-/*    --theme-font-nowrap: {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    };
-*/
 
     --theme-font-title: {
       @apply(--theme-font-general);
@@ -250,35 +125,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin: 0px;
     };
 
-    --theme-font-body2: {
-      @apply(--theme-font-general);
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 30px;
-    };
-
-    --theme-font-menu: {
-      @apply(--theme-font-general);
-      @apply(--theme-font-nowrap);
-      font-size: 13px;
-      font-weight: 500;
-      line-height: 24px;
-    };
-
-    --theme-font-button: {
-      @apply(--theme-font-general);
-      @apply(--theme-font-nowrap);
-    };
-
-
-
-
-    /* GENERAL */
-    --total-canvas: {
-      width: 100vw;
-      min-height: 100vh;
-      overflow-y: scroll;
-    };
+ 
 
     --no-edges: {
       padding: 0px;
@@ -291,30 +138,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* General styles */
 
-  body {
-    @apply(--layout-fullbleed);
-    @apply(--layout-vertical);
-    height: 100%;
-  }
-
-  neon-animated-pages {
-    height: 100%;
-  }
-
-
-
-
-  /* SPECIFIC styles */
-
-    .canvasblue {
-      @apply(--total-canvas);
-      @apply(--blue-bgcolor);
+    body {
+      @apply(--layout-fullbleed);
+      @apply(--layout-vertical);
+      height: 100%;
     }
 
-
-    .canvas {
-      @apply(--total-canvas);
+    iron-pages {
+      width: 100%;
     }
+
+    .content {
+      box-sizing: border-box;
+      width: 100%;
+      @apply(--layout-vertical);
+      @apply(--layout-center-center); 
+    }
+
+    .head {
+      box-sizing: border-box;
+    }
+
     .whiteback {
       background-color: white;
     }
@@ -359,16 +203,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     p {
       @apply(--theme-font-body1);
       font-weight: 300;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 24px;
     }
+
+    li {
+      @apply(--theme-font-body1);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+    } 
 
     a {
       color: #219dc8;
       font-weight: 400;
       @apply(--theme-font-body1);
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 24px;
       text-decoration: none;
 /*      background-color: rgba(0,0,0,0.05);
       padding: 0px 2px 0px 2px;*/
@@ -387,6 +238,40 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       text-decoration: underline;
     }
 
+    .highlighted {
+         font-family: Opensans; 
+        /* color: black; */
+      }
+
+    .linky {      
+         font-family: Opensans; 
+         color: var(--locals-grey7); 
+    }
+
+
+    .linkyextern {      
+         font-family: Opensans; 
+         color: var(--locals-blue); 
+    }
+
+    .littlebottom {
+      margin:10px 0px 0px 0px;
+         font-family: OpensansSemibold; 
+/*         color: var(--locals-blue); 
+*/
+    }
+
+    .smallest {
+      font-size: 13px;
+      line-height: 17px;
+      color: var(--locals-grey6);
+      margin:0px 0px 0px 0px;
+      max-width: 400px;
+
+    }
+
+
+
     .flex {
       @apply(--layout-flex);
     }
@@ -395,11 +280,106 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       font-weight: 700;
     }
 
+
+
     .contentsectie {
-      width: 100vw;
+      transition: all .25s linear;
+      width: 100%;
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+      box-sizing: border-box;
+      padding: 6vh 4vw 6vh 4vw;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      background-color: #F7F7F7;
+      margin: 0px; 
+    }
+
+    .localcommunitysectie {
+      width: 100%;
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+      box-sizing: border-box;
+      padding: 4vh 0vw 4vh 0vw;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      background-color: #FFFFFF;
+      margin: 0px;       
+    }
+
+
+    .topcontent {
+      box-sizing: border-box;
+      padding: 0vh 4vw 6vh 4vw;
+      background-color: white;
+    }
+
+/*    .smallsection {
+      transition: all .25s linear;
+      box-sizing: border-box;
+      padding: 0vh 0vw 0vh 0vw;
+    }*/
+
+
+    .contentondersectie {
+      transition: all .25s linear;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 5px 0vw 0vh 0vw;
       @apply(--layout-vertical);
       @apply(--layout-center-center);
     }
+
+    .collapsetrue {
+      box-sizing: border-box;
+      padding: 5px 0vw 0vh 0vw;
+    }
+
+    .contentondersectie h2 {
+      text-align: center;
+      font-family: OpensansSemibold;
+      font-weight: 500;
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0px 0px 0px 0px;
+      color: var(--locals-blue);
+
+      }
+
+   .contentondersectie a {
+      text-align: center;
+      font-family: OpensansSemibold;
+      font-weight: 500;
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0px 0px 0px 0px;
+      color: var(--locals-blue);
+
+      }
+
+    .collapsetrue h2 {
+      font-family: OpensansLight;
+      font-weight: 100;
+      text-align: center;
+      font-size: 22px;
+      line-height: 28px;
+      margin: 4px 0px 10px 0px;
+      color: rgba(0,0,0,0.35);
+
+      }
+
+
+    .blackback {
+      background-color: rgba(0,0,0,0.90);
+      color: white;
+    }
+
+    .opened {
+      box-sizing: border-box;
+      padding: 6vh 4vw 6vh 4vw;
+      background-color: #FFFFFF;
+    }
+
 
     .whitespace {
       height: 20px;
@@ -426,7 +406,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /*  SECTIE 1: header  */
 
     .headimg {
-      width: 100vw;
+      width: 100%;
       height: 370px;
       background-size: auto 100%;
       background: url(../images/website-test2-BG.png),
@@ -461,6 +441,134 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
 
+
+
+
+    neon-animated-pages {
+      width: 100%;
+      height: 100%;
+    }
+
+    .examplescanvas {
+      width: 100%;
+      @apply(--layout-vertical);
+    }
+
+    .examplesheadimg {
+      width: 100%;
+      min-height: 270px;
+      background-size: auto 100%;
+      background: url(../images/localcommunity-exampleone-BG6b.png),
+        linear-gradient(0deg, #FFFFFF 36%, #bbddc9 36%)
+        ;
+      background-repeat: nof-repeat;
+      background-position: center; 
+
+      @apply(--layout-horizontal);
+      @apply(--layout-start);
+
+      @apply(--layout-center-justified);   
+
+    }
+
+    .examplesheadtitle {
+      width: 100%;
+      background-color: #bbddc9;
+      text-align: center;
+
+      @apply(--layout-vertical);
+      @apply(--layout-start);
+
+      box-sizing:border-box;
+      padding: 3vh 10vw 0vh 10vw;   
+    }
+
+
+    .examplesbackbar {
+      width: 100%;
+      background-color: #bbddc9;      
+      box-sizing:border-box;
+    padding: 20px 20px 0px 20px;
+    }
+
+    .examplessub {
+      font-family: OpensansSemibold;
+      color: var(--locals-grey7);
+    }
+
+    .examplequote {
+      font-family: OpensansLight;
+      font-size: 24px;
+      line-height: 30px;
+      color: var(--locals-grey5);
+    }
+
+
+
+    .examplesmaintitle {
+      @apply(--theme-font-title);
+      font-size: 64px;
+      margin: 0px 0px 20px 0px;
+      text-align: center;
+
+    }
+
+    .examplessubtitle {
+      font-family: OpensansBold;
+      -webkit-font-smoothing: antialiased;
+      line-height: 22px;
+      margin: 8px 0px 8px 0px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+
+
+    .examplescanvaspages {
+      width: 100vw;
+      height: 100vh;
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+    }
+
+    .examplescontainer {
+      width: 100%;
+      height: 100%;
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+    }
+
+
+
+    .examplescontentsectie {
+      transition: all .25s linear;
+      width: 100%;
+      @apply(--layout-vertical);
+      @apply(--layout-start);
+      box-sizing: border-box;
+      padding: 6vh 10vw 6vh 10vw;
+      background-color: white;
+      margin: 0px; 
+    }
+    .examplescontentpart {
+      width: 100%;
+      max-width: 830px;
+      box-sizing: border-box;
+    }
+
+    .examplespart {
+      width: 100%;
+    }
+
+    .blue {
+      background-color: var(--locals-blue);
+    }
+    .green {
+      background-color: var(--locals-green);
+    }
+    .yellow {
+      background-color: var(--locals-yellow);
+    }
 /*    .headertje {
       min-height: 70vh;
       width: 100vw;
@@ -518,7 +626,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .introvak img {
       height: 70px;
       width: 70px;
-      margin-right: 25px;
     }
 
     .maintitle {
@@ -575,26 +682,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .contentpart {
       width: 80%;
-      max-width: 1050px;
+      max-width: 830px;
       box-sizing: border-box;
-      padding: 0vh 4vw 6vh 4vw;
     }
 
-    .topcontent {
-      box-sizing: border-box;
-      padding-top: 6vh;      
-    }
     .contentpart h3 {
       font-family: OpensansLight;
-/*      color: var(--locals-blue);*/
-      color: rgba(0,0,0,0.35);
-      font-size: 24px;
-      line-height: 30px;
-      margin: 0px 0px 8px 0px;
+      text-align: center;
+      color: var(--locals-blue);
+/*      color: rgba(0,0,0,0.35);*/
+      font-size: 22px;
+      line-height: 28px;
+      margin: 0px 0px 0px 0px;
     }
+
+    .contentpart p {
+      text-align: center;
+    }
+
+    .opened h3 {
+/*      font-size: 24px;*/
+      color: rgba(0,0,0,0.35);
+      font-family: OpensansLight;
+      margin: 0px 0px 15px 0px;
+
+    }
+
+    .topcontent h3 {
+/*      font-size: 24px;*/
+      color: rgba(0,0,0,0.35);
+      font-family: OpensansLight;
+      margin: 0px 0px 15px 0px;
+
+    }
+
     .part {
       width: 100%;
+    }
+
+    iron-collapse {
       @apply(--layout-vertical);
+      @apply(--layout-center-center);
     }
 
 
@@ -638,211 +766,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       max-width: 750px;
       @apply(--layout-vertical);
       @apply(--layout-start);
-      text-align: left;
+      text-align: center;
       margin: 0px 0px 20px 0px;
 
     }*/
 
-    .onderdeelbtn {
-      outline: 0; 
-      margin: 5px 5px 5px 0px;
-      box-sizing:border-box;
-      border-radius: 8px;
-      cursor: pointer;
-      @apply(--theme-font-button);
-      background-color: transparent;
-      border: none;
-      color: var(--pinktwee-theme-color);
-      padding: 0px;
-      font-size: 18px;
-      font-weight: 700;
-      margin: 10px 0px 0px 0px;
-      @apply(--layout-horizontal);
-      @apply(--layout-center);
-      text-decoration: underline;
+    .illustraty {
+      width: 70%;
+
     }
-
-    .onderdeelbtn img {
-      width: 16px;
-      margin-right: 10px;
-    }
-
-    .onderdeelbtn:hover {
-      background-color: transparent;
-      color: black;
-    }
-
-
-
-    .onderdeel img {
-      width: 290px;
-    }
-
-    .drieluik {
+    .illustraty img {
       width: 100%;
-      @apply(--layout-horizontal);
-      @apply(--layout-start);
-      @apply(--layout-wrap);
+      height: 40%;
     }
-
-
-    .luik {
-      background-color: rgba(0,0,0,0.025); 
-      width: 31%;
-      @apply(--layout-vertical);
-      @apply(--layout-start);
-      @apply(--layout-center);
-      margin: 0px 1% 0px 1%;
-      border-radius: 10px 10px 0px 0px;
-    }
-
-    .luik img {
+    .illustratymobile {
       width: 100%;
-      object-fit:contain;
     }
-
-    .luikimg {
-      width: 80%;
-      padding: 30px 0px 15px 0px;
-      box-sizing:border-box;
-    }
-
-    .luiktxt {
+    .illustratymobile img {
       width: 100%;
-      box-sizing:border-box;
-      padding: 0px 30px 0px 30px;
-/*      box-sizing:border-box;
-      padding: 30px;*/
-    }
-
-    .luiktxt h3 {
-      width: 100%;
-      text-align: center;
-      font-size: 22px;
-    }
-    .luiktxt p {
-      width: 100%;
-      text-align: center;
-      font-size: 16px;
-       box-sizing:border-box;
-      padding: 10px 10px 30px 10px;     
-    }
-
-    .objdata {
-      background-color: rgba(0,0,0,0.035);
-      width: 100%;
-      box-sizing:border-box;
-      padding: 20px 0px 20px 0px;
-    }
-
-    .objdata h2 {
-      width: 100%;
-      text-align: center;
-      font-size: 16px;
-      margin: 0px;
-      color: rgba(0,0,0,0.35);
-    }
-
-    .objdata p {
-      text-align: center;
-      font-size: 16px;
-    }
-
-    .objlink {
-      box-sizing:border-box;
-      padding: 15px 0px 15px 0px;
-      width: 100%;
-      background-color: #219dc8;
-      border-radius: 0px 0px 10px 10px;
-
-    }
-
-
-    .objlink:hover {
-      background-color: #006A86;
-    }
-
-    .objlink img {
-      width: 20px;
-      margin: 0px 10px 0px 10px;
-    }
-
-    .objlink a {
-      @apply(--layout-horizontal);
-      @apply(--layout-center-center);
-      color: white;
-      width: 100%;
-      text-align: center;
-      font-size: 14px;
-      font-weight: 700;
-/*      text-decoration: none;
-
-      margin: 10px;
-      width: 20px;*/
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*  SECTIE 3: Lees de volledige whitepaper  */
-
-    .fullink {
-      @apply(--layout-horizontal);
-      @apply(--layout-center-center);
-      width: 85%;
-      max-width: 1050px;
-      margin: 5vh 0px 5vh 0px;
-    }
-
-    .fullink a {
-      @apply(--clean-btn);
-      text-decoration: none;
-      background-color: transparent;
-      padding: 30px 35px 30px 35px;
-      font-size: 28px;
-      border: 1px solid black;
-      color: black;
-    }
-
-    .fullink a:hover {
-      background-color: var(--pinktwee-theme-color);
-    }
-
-
-
-    /*  SECTIE 4: Hoe werkt zo'n poezenclub?  */
-
-    .technisch {
-      width: 100%;
-      max-width: 1050px;
-      @apply(--layout-horizontal);
-      @apply(--layout-center-center);
-      @apply(--layout-wrap);
-    }
-
-    .hoewerkt {
-      width: 85%;
-      max-width: 1050px;
-      margin: 5vh 0px 5vh 0px;
-    }
-
-
-    .hoewerkt img {
-      width: 100%;
-      max-width: 1050px;
+      height: 80%;
     }
 
 
@@ -850,14 +792,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /*  SECTIE 5: Einde  */
 
     .einde {
-      width: 85%;
-      max-width: 1050px;
-      margin: 5vh 0px 5vh 0px;
+     width: 100%;
       @apply(--layout-vertical);
       @apply(--layout-center-center);
-
       text-align: center;
-      padding-bottom: 5vh;
+      box-sizing: border-box;
+      padding: 8vh 0px 8vh 0px;
     }
 
     .einde h1 {
@@ -876,11 +816,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
     .contact {
+      max-width: 100%;
       @apply(--layout-horizontal);
       @apply(--layout-center-center);
       @apply(--layout-wrap);
-      margin: 0px 0px 40px 0px;
     }
+
+
+
 
     .contact a {
       font-size: 14px;
@@ -926,110 +869,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
 
-    .technisch {
-      @apply(--layout-horizontal);
-      @apply(--layout-center-center);
-      height: 100%;
-      width: 100%;
-      box-sizing:border-box;
-      padding: 0px;
-    }
-
-    .technisch a {
-      outline: 0; 
-      margin: 5px 15px 5px 15px;
-      box-sizing:border-box;
-      border-radius: 8px;
-      cursor: pointer;
-      @apply(--theme-font-button);
-      background-color: transparent;
-      border: none;
-      color: black;
-      padding: 30px;
-      font-size: 22px;
-      font-weight: 700;
-      @apply(--layout-horizontal);
-      @apply(--layout-center);
-      text-decoration: underline;
-      background-color: rgba(0,0,0,0.05);
-    }
-
-
-    .technisch a:hover {
-      background-color: rgba(0,0,0,0.075);
-    }
-
-    .technisch a img {
-      width: 16px;
-      margin-right: 10px;
-    }
-
-
-
-
-    /*  WHITEPAPER SECTIE  */
-  .whitepaper {
-    width: 100vw;
-    max-width: 1050px;
-    box-sizing:border-box;
-    padding: 50px;
-    @apply(--layout-vertical);
-    @apply(--layout-start);
-  }
-
-  .whitepaper ul,li {
-      font-family: OpensansLight;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 25px;
-  }
-  .whitepaper ul {
-    margin: 0px;
-  }
-
-  paper-toolbar button {
-    margin: 0px 0px 0px 10px;
-      border: none;
-      outline: 0; 
-      box-sizing:border-box;
-      padding: 6px 12px 6px 12px;
-      border-radius: 8px;
-      cursor: pointer;
-      @apply(--theme-font-button);
-      background-color: var(--pinktwee-theme-color);
-  }
-
-  paper-toolbar button:hover {
-      background-color: rgba(0,0,0,0.35);
-  }
-
-  .whitepaper li {
-    margin: 10px 0px 10px 0px;
-  }
-
-  .whitepaper h1 {
-      font-family: OpensansLight;
-  }
-  .whitepaper h2 {
-      font-family: OpensansLight;
-  }
-
-  paper-toolbar {
-/*    @apply(--layout-horizontal);
-    @apply(--layout-center-center);*/
-    @apply(--pink-bgcolor);
-  }
-
-  paper-toolbar a {
-    font-family: OpensansLight;
-    text-decoration: none;
-  }
-
-  .italic {
-    font-family: OpensansLightitalic;
-  }
-
-
   .brand {
     width: 100%;
     @apply(--layout-vertical);
@@ -1052,7 +891,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
   .languagepicker {
-    width: 100vw;
+    width: 100%;
     background-color: var(--blauw-theme-color);
     box-sizing:border-box;
     padding: 20px 20px 20px 20px;
@@ -1117,28 +956,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       text-align: center;
       margin: 10px 0px 15px 0px;
     }
-/*    .subtitle {
-      font-size: 28px;
-    }*/
-    .introvak img {
-      margin-right: 0px;
-    }
-    .joinvlak p {
-      width: 100%;   
-      text-align: center;
-    }
-    .joinbtn {
-      width: 100%;    
-    }
 
-    .onderdeeltxt {
-      text-align: center;
-    }
-
-    .whatis h2 {
-      text-align: center;
-      margin: 20px 0px 20px 0px;
-    }
 
 
     .headimg {
@@ -1170,26 +988,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .subtitle {
       margin: 8px 0px 30px 0px;
     }
-    .introvak {
-      box-sizing:border-box;
-      padding: 15vw 0vw 15vw 0vw;
-    }
-    .introvak img {
-      margin-right: 0px;
-    }
 
-    .joinvlak {
-      margin: 30px 0px 0px 0px;
-    }
-
-    .joinvlak p {
-      width: 100%;
-      font-size: 18px;   
-      text-align: center;
-    }
-    .joinbtn {
-      width: 100%;    
-    }
 
     .fullink button {
       background-color: transparent;

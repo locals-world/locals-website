@@ -35,6 +35,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   app.addEventListener('dom-change', function() {
     console.log('Our app is ready to rock!');
     app.activelocals = '458';
+    app.exampleoneselected = 0;
+    app.entryAnimation = "slide-from-right-animation";
+    app.exitAnimation = "slide-left-animation";
   });
 
   // See https://github.com/Polymer/polymer/issues/1381
@@ -89,7 +92,78 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     Platform.performMicrotaskCheckpoint();
   };
 
+  app.toggleItem = function(event){
+    var itemid = event.target.id;
 
+    // var itemidtotal = itemid+'total';
+    // var itemtoclass = document.getElementById(itemidtotal);
+    // itemtoclass.className += " opened";
+
+
+    var itemtoopen = '#'+itemid+'collapser';
+    var itemtoggle = document.querySelector(itemtoopen);
+    itemtoggle.toggle();
+
+    if (itemtoggle.opened) {
+      console.log(itemtoggle, "is opened");
+    var itemidtotal = itemid+'total';
+    var itemtoclass = document.getElementById(itemidtotal);
+    itemtoclass.className += " opened";      
+    } else {
+      console.log(itemtoggle, "is closed");
+    var itemidtotal = itemid+'total';
+    var itemtoclass = document.getElementById(itemidtotal);
+    itemtoclass.className = "contentsectie";      
+    }
+
+  };
+
+
+
+  app.toggleItemNoClasses = function(event){
+    var itemid = event.target.id;
+
+
+
+
+    var itemtoopen = '#'+itemid+'collapser';
+    var itemtoggle = document.querySelector(itemtoopen);
+    itemtoggle.toggle();
+
+    if (itemtoggle.opened) {
+    var itemidtotal = itemid+'total';
+    var itemtoclass = document.getElementById(itemidtotal);
+    itemtoclass.className += " collapsetrue";     
+    } else {
+      console.log(itemtoggle, "is closed");
+    var itemidtotal = itemid+'total';
+    var itemtoclass = document.getElementById(itemidtotal);
+    itemtoclass.className = "contentondersectie";      
+    }
+
+  };
+
+  app.nextExampleOne = function(event) {
+    app.entryAnimation = "slide-from-right-animation";
+    app.exitAnimation = "slide-left-animation";
+
+    app.exampleoneselected += 1;
+    console.log("this one",event);
+
+  };
+
+  app.prevExampleOne = function() {
+    app.entryAnimation = "slide-from-left-animation";
+    app.exitAnimation = "slide-right-animation";
+
+    app.exampleoneselected -= 1;
+    console.log("this one",event);
+
+  };
+
+  app.scrolltoTop = function() {
+    window.scrollTo(0, 0); 
+  };
 
 
 })(document);

@@ -5,11 +5,11 @@
   },
   "subtitle1": {
     "description": "...",
-    "message": "Er zijn"
+    "message": "Er zijn "
   },
   "subtitle2": {
     "description": "...",
-    "message": "Locals actief op het Ethereum testnet."
+    "message": " Locals actief op het Ethereum testnet."
   },
   "calltoaction": {
     "description": "...",
@@ -21,7 +21,7 @@
   },
   "whatisalocal1txt": {
     "description": "...",
-    "message": "Een Local is een account binnen het Locals-ecosysteem. Met een Local kan je lid worden van een gemeenschap ("
+    "message": "Een Local is een account binnen het Locals-ecosysteem. Met een Local kan je lid worden van een "
   },
   "whatisalocallink1": {
     "description": "...",
@@ -30,7 +30,7 @@
 
   "whatisalocal2txt": {
     "description": "...",
-    "message": ") of er zelf één organiseren. Met een Local kan je ook "
+    "message": " of er zelf één organiseren. Je kan met een Local ook "
   },
 
   "whatisalocallink2": {
@@ -43,6 +43,69 @@
     "message": " ontvangen en uitgeven."
   },
 
+
+
+  "whatisalocalTEST": {
+    "description": "...",
+    "message": "Wat is een Local?"
+  },
+  "whatisalocalTEST1txt": {
+    "description": "...",
+    "message": "Een Local is een account binnen het "
+  },
+  "whatisalocalTESTlink1": {
+    "description": "...",
+    "message": "Locals-ecosysteem"
+  },
+
+  "whatisalocalTEST2txt": {
+    "description": "...",
+    "message": ". Het Locals-ecosysteem omvat de Locals-app, de LocalCoin en de Locals-contracten (zoals vb. LocalCommunity) en draait volledig op de "
+  },
+
+  "whatisalocalTESTlink2": {
+    "description": "...",
+    "message": "Ethereum blockchaintechnologie"
+  },
+
+  "whatisalocalTEST3txt": {
+    "description": "...",
+    "message": ". "
+  },
+  "whatisalocalTEST4txt": {
+    "description": "...",
+    "message": " Met een Local kan je "
+  },
+
+  "whatisalocalTESTlink3": {
+    "description": "...",
+    "message": "LocalCoin"
+  },
+  "whatisalocalTEST5txt": {
+    "description": "...",
+    "message": " ontvangen en uitgeven, de "
+  },
+
+  "whatisalocalTESTlink4": {
+    "description": "...",
+    "message": "digitale munt"
+  },
+  "whatisalocalTEST6txt": {
+    "description": "...",
+    "message": " die gebruikt wordt om dingen in de app doen (vb. een club aanmaken, een voorstel lanceren, ... )."
+  },
+  "whatisalocalTEST7txt": {
+    "description": "...",
+    "message": " Met een Local kan je lid worden van een "
+  },
+  "whatisalocalTESTlink5": {
+    "description": "...",
+    "message": "LocalCommunity"
+  },
+  "whatisalocalTEST8txt": {
+    "description": "...",
+    "message": " of er zelf één organiseren."
+  },
   "whatisthelocalsecosystem": {
     "description": "...",
     "message": "Wat is het Locals-ecosysteem?"
@@ -68,8 +131,19 @@
   },
   "whatisthelocalcoin1txt": {
     "description": "...",
-    "message": "De LocalCoin is de munt die gebruikt wordt binnen het Locals-ecosysteem."
+    "message": "De LocalCoin is de "
   },
+
+  "whatisthelocalcoinlink1": {
+    "description": "...",
+    "message": " digitale munt"
+  },
+
+  "whatisthelocalcoin2txt": {
+    "description": "...",
+    "message": " die gebruikt wordt binnen het Locals-ecosysteem. Met de LocalCoin kan je dingen in de app doen, zoals vb. een club aanmaken of een voorstel lanceren. Alle Locals-contracten draaien op LocalCoin."
+  },
+
 
   "whatisalocalcommunity": {
     "description": "...",
@@ -87,36 +161,148 @@
 
   "whatisalocalcommunity2txt": {
     "description": "...",
-    "message": ", onderling communiceren, samen budgetten beheren… Maar vb. ook samen een verkoopspunt organiseren of een eigen coin starten."
+    "message": ", onderling communiceren, samen budgetten beheren… Maar vb. ook samen een verkoopspunt organiseren, een eigen coin of een reputatiesysteem starten."
   },
 
-  "whatisalocalcommunity3txt": {
+  "whycommunity3txt": {
     "description": "...",
-    "message": " Omdat de app met de blockchain-technologie van Ethereum werkt, is er geen tussenpersoon of scheidsrechter nodig om de werking van een LocalCommunity volgens de vastgelegde regels te laten verlopen. Deze regels (vb. hoe je lid wordt van een gemeenschap, wie voorstellen mag doen en wie mee mag stemmen,…) worden vastgelegd in een "
+    "message": "Waarom een LocalCommunity starten?"
   },
 
 
-
-  "whatisalocalcommunitylink2": {
+  "whycommunity4txt": {
     "description": "...",
-    "message": "Locals-contract"
+    "message": " Omdat de app met de blockchain-technologie van Ethereum werkt, is er geen tussenpersoon of scheidsrechter nodig om de werking van een LocalCommunity volgens de vastgelegde regels te laten verlopen. Deze regels (vb. hoe je lid wordt van een gemeenschap, wie voorstellen mag doen en wie mee mag stemmen,…) worden vastgelegd in een Locals-contract dat wordt uitgevoerd op de "
   },
 
-  "whatisalocalcommunity4txt": {
-    "description": "...",
-    "message": " dat wordt uitgevoerd op de "
-  },
-
-  "whatisalocalcommunitylink3": {
+  "whycommunitylink3": {
     "description": "...",
     "message": "Ethereum Blockchain"
   },
 
-  "whatisalocalcommunity5txt": {
+
+  "whycommunity5txt": {
     "description": "...",
     "message": "."
   },
 
+  "communityexamples": {
+    "description": "...",
+    "message": "voorbeelden van een LocalCommunity"
+  },
+
+  "communityexampleonetitle": {
+    "description": "...",
+    "message": "voorbeeld 1"
+  },
+
+  "communityexampleone": {
+    "description": "...",
+    "message": "De Lelie"
+  },
+  "communityexampleone1subtitle": {
+    "description": "...",
+    "message": "De situatie"
+  },
+  "communityexampleone1txt": {
+    "description": "...",
+    "message": "In woonblok “De Lelie” zijn 100 bewoners. Enkele problemen slepen al jaren aan: de gang is vuil; de staat van de gang is belabberd; voor De Lelie is een grasveldje dat er nu kaal bijligt; er is veel verloop in de lelie en niet iedereen kent elkaar en hierdoor is er heel beperkte sociale cohesie."
+  },
+
+  "communityexampleone2txt": {
+    "description": "...",
+    "message": "De ideale toestand voor “De Lelie” zou zijn als het hele gebouw in goede staat is, als de gemeenschappelijke delen proper zijn, als het grasveldje benut wordt, en vooral als de buren bij mekaar terecht kunnen."
+  },
+  "communityexampleone2subtitle": {
+    "description": "...",
+    "message": "Esmee is het beu"
+  },
+  "communityexampleone3txt": {
+    "description": "...",
+    "message": "De syndicus die verantwoordelijk is voor het gebouw doet het minimum maar is niet verder betrokken bij de gemeenschap van “De Lelie”."
+  },
+
+  "communityexampleone4txt": {
+    "description": "...",
+    "message": "Ze kan er niet langer mee om dat de blok zo minimal onderhouden wordt, dat er geen sociaal contact is tussen de buren. Ze start een LocalCommunity: “De Lelie”, met LelieCoins en LelieRep (reputatie).  Esmee maakt elke bewoner lid in “De Lelie”, elk nieuw lid krijgt 10 LelieCoins. Er wordt een gemeenschappelijke pot aangelegd voor klussen allerhande. In deze “Leliepot” zit 500 LelieCoin."
+  },
+  "communityexampleone3subtitle": {
+    "description": "...",
+    "message": "Frank uit appartement 104 heeft een prei nodig"
+  },
+  "communityexampleone5txt": {
+    "description": "...",
+    "message": "Hij loopt naar de buren die hij kent, maar die zijn er niet. Hij gaat een verdiep hoger en koopt een prei bij een bovenbuur die hij nog niet kende. De bovenbuur, Sergei, weet zeker dat Frank uit De Lelie komt, want hij heeft LelieCoins . Sergei vraagt aan Frank 1 LelieCoin voor de prei. Omdat Sergei 1 LelieCoin ontvangt, ontvangt hij automatisch 1 Lelierep. Sergei wordt beloond omdat hij iets goed deed voor de gemeenschap.  Bij Frank vertrekt er 1 LelieCoin naar Sergei en er wordt 0,01 (1% van het bedrag) verstuurd naar de “Leliepot”, een belasting om de gemeenschappelijke pot te spijzen."
+  }, 
+  "communityexampleone4subtitle": {
+    "description": "...",
+    "message": "Sergei gaat het suikerfeest vieren"
+  },
+  "communityexampleone6txt": {
+    "description": "...",
+    "message": "Ter gelegenheid hiervan gaat hij 6 dagen naar zijn familie in zijn geboorteland. Hij gaat opzoek naar iemand die op zijn kat kan komen letten en de planten water geven. Hiervoor vindt hij Rosetta, een oudere dame van appartement 216. Zij krijgt voor elke dag dat Sergei weg is, 1 LelieCoin, 6 in totaal. Ze ontvangt ook meteen 1 Lelierep, omdat ze iets goed deed voor de gemeenschap. 1% van de LelieCoins die betaald wordt naar de Leliepot gestuurd."
+  }, 
+  "communityexampleone5subtitle": {
+    "description": "...",
+    "message": "Rosetta eet graag stoofvlees"
+  },  
+  "communityexampleone7txt": {
+    "description": "...",
+    "message": "Stoofvlees maken voor 1 persoon is echter niet gemakkelijk. Het jonge gezin van Hannah maakt wel eens stoofvlees. Dat hoorde Rosetta van Sergei. Als er wat stoofvlees over is, stuurt Hannah een van de kinderen om een portie naar Rosetta te brengen. Rosetta geeft Hannah 1 LelieCoin (0,01 LelieCoin gaat naar de Leliepot) en Hannah ontvangt een LelieRep."
+  }, 
+  "communityexampleone6subtitle": {
+    "description": "...",
+    "message": "Hannah heeft een nieuwe Ikea kast op het oog"
+  },  
+  "communityexampleone8txt": {
+    "description": "...",
+    "message": "Maar ze kan ze niet zelf in elkaar zetten. Ze heeft er vijf LelieCoins voor over om iemand de kast in elkaar te laten zetten. Jammer genoeg heeft ze nog maar 2 LelieCoins. Ze kijkt naar de taken die er te doen zijn voor De Lelie, zo kan ze LelieCoin verdienen van de Leliepot. De gang kuisen levert haar 10 LelieCoin op, ze ontvangt ook 1 LelieRep."
+  }, 
+  "communityexampleone8btxt": {
+    "description": "...",
+    "message": "Hannah heeft de smaak te pakken, ze ziet dat er ook 5 LelieCoin te verdienen zijn door nieuwe bewoners welkom te heten, de LelieCommunity uit te leggen en aanspreekpunt te zijn voor hen. Ze neemt de job met beide handen aan wanneer Rakesh en zijn vrouw in de lelie komen wonen."
+  },  
+
+  "communityexampleone9txt": {
+    "description": "...",
+    "message": "Op deze manier ontstaat er een nieuwe sociale structuur in De Lelie, waarbij iedereen elkaar en de gemeenschap helpt."
+  }, 
+  "communityexampleone7subtitle": {
+    "description": "...",
+    "message": "Esmee ziet na een jaar dat de Leliegemeenschap goed draait"
+  }, 
+  "communityexampleone10txt": {
+    "description": "...",
+    "message": "Ze stelt voor om iets te doen met het kale grasveld voor het gebouw."
+  }, 
+    "communityexampleone11txt": {
+    "description": "...",
+    "message": "Er worden verschillende voorstellen gelanceerd, een bloemenperk, een speeltuin, een kruidentuin, een grindvlak. Op een bepaald moment wordt hier een stemming voor georganiseerd. Alle bewoners mogen stemmen, elke stem heeft het gewicht van de reputatie. Esmee heeft heel actief deelgenomen aan de Leliecommunity, zijn heeft veel LelieCoin ontvangen, door zaken te doen voor de buren of de gemeenschap, waardoor zij telkens LelieRep heeft bijgekregen. Esmee heeft nu 100 Lelierep, haar stem telt voor 100. Johannes daarentegen, heeft zijn 10 LelieCoins opgedaan, heeft veel gekregen, maar nooit zelf iets teruggedaan voor een buur of voor de gemeenschap. Zijn Lelierep staat nog steeds op 0. Momenteel is het gewicht van zijn stem in een stemming 0. Vanaf het moment dat Johannes 1 iets doet dat de Leliegemeenschap ten geode komt, telt zijn stem terug mee."
+  }, 
+
+    "communityexampleone12txt": {
+    "description": "...",
+    "message": "Na vijf jaar draait de Leliegemeenschap zo goed, koopt de Lelie fietsen aan die kunnen geleend worden met LelieCoin, wie ze onderhoudt krijgt LelieCoin, …"
+  }, 
+
+    "communityexampleone13txt": {
+    "description": "...",
+    "message": "De jaren erna wordt er meer en meer geïnvesteerd, zonnepanelen, speeltuig, kinderopvang, recyclage, …"
+  }, 
+  "communityexampletwotitle": {
+    "description": "...",
+    "message": "voorbeeld 2"
+  },
+
+  "communityexampletwo": {
+    "description": "...",
+    "message": "De plukboerderij"
+  },
+
+  "communityexampletwo1txt": {
+    "description": "...",
+    "message": " example 2"
+  },
 
 
   "howdoesalocalcontractwork": {
@@ -125,39 +311,72 @@
   },
   "howdoesalocalcontractwork1txt": {
     "description": "...",
-    "message": "Een Locals-contract is een Smart Contract (‘slim contract’) waarin functies beschreven staan en data kan worden opgeslagen. Eens uitgevoerd op de Ethereum Blockchain kan het Smart Contract en zijn functies en data worden aangesproken. Wanneer een functie wordt aangesproken, wordt deze exact zo uitgevoerd zoals beschreven. Dit is eigen aan de technologie (lees meer over "
+    "message": "Een Locals-contract is een "
   },
 
   "howdoesalocalcontractworklink1": {
     "description": "...",
-    "message": "Ethereum"
+    "message": "Smart Contract (‘slim contract’)"
   },
 
   "howdoesalocalcontractwork2txt": {
     "description": "...",
+    "message": "  waarin functies beschreven staan en data kan worden opgeslagen. Eens uitgevoerd op de Ethereum Blockchain kan het Smart Contract en zijn functies en data worden aangesproken. Wanneer een functie wordt aangesproken, wordt deze exact zo uitgevoerd zoals beschreven. Dit is eigen aan de technologie (lees meer over "
+  },
+
+  "howdoesalocalcontractworklink2": {
+    "description": "...",
+    "message": "Ethereum"
+  },
+  "howdoesalocalcontractwork3txt": {
+    "description": "...",
     "message": " voor meer details)."
   },
 
-  "howdoesalocalcontractwork3txt": {
+  "howdoesalocalcontractwork4txt": {
     "description": "...",
-    "message": "Een voorbeeld van een Locals-contract is het LocalCommunity-contract met zijn specifieke functies zoals vb. het toevoegen van nieuwe leden. Hoe de functie wordt uitgevoerd, wordt bepaald in de beschrijving: Kan iedereen nieuwe leden aanwerven? Of kan een nieuw lid enkel door de originele aanmaker van de Local-Community worden toegevoegd? Of moet een nieuw lid bevestigd worden door 2 huidige leden van die Local-Community? De beschrijving van de functies binnen een LocalCommunity zou je de spelregels kunnen noemen."
+    "message": "Een voorbeeld van een Locals-contract is het LocalCommunity-contract met zijn specifieke functies zoals vb. het toevoegen van nieuwe leden. Hoe een functie wordt uitgevoerd, wordt bepaald in de beschrijving: Kan iedereen nieuwe leden aanwerven? Of kan een nieuw lid enkel door de originele aanmaker van de LocalCommunity worden toegevoegd? Of moet een nieuw lid bevestigd worden door 2 huidige leden van die LocalCommunity? De beschrijving van de functies binnen een LocalCommunity zou je de spelregels kunnen noemen."
   },
 
 
-  "whyalocalcommunity": {
+  "howdoistart": {
     "description": "...",
-    "message": "Waarom zou ik een LocalCommunity starten?"
+    "message": "Hoe begin ik eraan?"
   },
-  "whyalocalcommunity1txt": {
+  "howdoistart1txt": {
     "description": "...",
-    "message": "Komtie."
+    "message": "Surf naar "
+  },
+
+  "howdoistartlink1": {
+    "description": "...",
+    "message": "Locals.world"
+  },
+
+  "howdoistart2txt": {
+    "description": "...",
+    "message": ", kies een wachtwoord en je hebt een Local."
   },
 
 
+  "whomakeslocals": {
+    "description": "...",
+    "message": "Wie maakt Locals?"
+  },
+  "whomakeslocals1txt": {
+    "description": "...",
+    "message": "De Locals Foundation is een decentrale organisatie die Locals bouwt, beheert en exploiteert. Locals Foundation werkt volgens het principe van een Decentrale Autonome Organisatie (DAO) - waarbij een initiële groep initiatiefnemers de DAO oprichten. Leden van deze DAO zijn gekend door hun publieke sleutel, die toegang geeft tot een rekening waarop Locals Foundation Tokens (LFT) staan."
+  },
 
+  "whomakeslocals2txt": {
+    "description": "...",
+    "message": "Hoe kom ik aan Locals Foundation tokens?"
+  },
 
-
-
+  "whomakeslocals3txt": {
+    "description": "...",
+    "message": "Wie LFT bezit, kan voorstellen doen in de Foundation, of stemmen op voorstellen. Een voorstel gaat over een idee, een nieuwe richting voor Locals, hoeveel geld aan een bepaald project of een bepaalde taak wordt uitgegeven."
+  },
 
   "whitepaper": {
     "description": "...",

@@ -64,15 +64,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template is="dom-bind" id="app">
   <iron-media-query query="(min-width: 600px)" query-matches="{{queryMatches}}"></iron-media-query>
     <!-- Main Content -->
-    <div class="content">
+    <div class="content" id="total">
       <iron-pages attr-for-selected="data-route" selected="{{route}}">
         <section data-route="home">
-          <div class="canvas">
 
             <!-- SECTIE 1: header -->
             <div class="head">
                 <div class="languagepicker">
-                <div class="flex"></div>
 
 <!--                 <iron-selector 
                 attr-for-selected="lang" 
@@ -82,6 +80,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <div lang="en" class="language"><h2>EN</h2></div>
                   <div lang="nl" class="language"><h2>NL</h2></div>
                 </iron-selector> -->
+                <div class="flex"></div>
 
                   <div class="toplinks">
                     <div class="contactlogotop">
@@ -108,143 +107,178 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </div>
 
 
-            <!-- SECTION: whatisalocal? -->
-            <div class="contentsectie darkback topcontent">
+
+<div class="contentsectie topcontent" id="localtotal">
               <div class="contentpart">
                 <div class="part">
-                    <h3><i18n-msg msgid="whatisalocal"></i18n-msg></h3>
-<!-- 
-                  <div class="rightfloater">
+                    <h3><i18n-msg msgid="whatisalocalTEST" on-tap="toggleItem" id="local"></i18n-msg></h3>
+                      <p><i18n-msg msgid="whatisalocalTEST1txt"></i18n-msg><span class="highlighted"><i18n-msg msgid="whatisalocalTESTlink1"></i18n-msg></span><i18n-msg msgid="whatisalocalTEST2txt"></i18n-msg><a href="//www.ethereum.org/" target="_blank" class="linkyextern"><i18n-msg msgid="whatisalocalTESTlink2"></i18n-msg></a><i18n-msg msgid="whatisalocalTEST3txt"></i18n-msg></p>
+                      <br>
+                    <p><i18n-msg msgid="whatisalocalTEST7txt"></i18n-msg><span class="highlighted"><i18n-msg msgid="whatisalocalTESTlink5"></i18n-msg></span><i18n-msg msgid="whatisalocalTEST8txt"></i18n-msg><i18n-msg msgid="whatisalocalTEST4txt"></i18n-msg><span class="highlighted"><i18n-msg msgid="whatisalocalTESTlink3"></i18n-msg></span><i18n-msg msgid="whatisalocalTEST5txt"></i18n-msg><a href="//www.ethereum.org/" target="_blank" class="linkyextern"><i18n-msg msgid="whatisalocalTESTlink4"></i18n-msg></a><i18n-msg msgid="whatisalocalTEST6txt"></i18n-msg></p>
 
-                    <div class="rightfloaterimg">
-                     <img src="../images/onelocal.png">
-                    </div>
-
-                    <div class="rightfloatertxt"> -->
-                      <p><i18n-msg msgid="whatisalocal1txt"></i18n-msg><a href="/#localcommunity"><i18n-msg msgid="whatisalocallink1"></i18n-msg></a><i18n-msg msgid="whatisalocal2txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocallink2"></i18n-msg></a><i18n-msg msgid="whatisalocal3txt"></i18n-msg></p>
-<!--                     </div> -->
-
-                  
                   </div>
                 </div>
               </div>
-            </div>
+
+
+
+            <!-- SECTION: whatisalocal? -->
+            <!-- <div class="contentsectie topcontent" id="localtotal">
+              <div class="contentpart">
+                <div class="part">
+                    <h3><i18n-msg msgid="whatisalocal" on-tap="toggleItem" id="local"></i18n-msg></h3>
+                      <p><i18n-msg msgid="whatisalocal1txt"></i18n-msg><span class="highlighted"><i18n-msg msgid="whatisalocallink1"></i18n-msg></span><i18n-msg msgid="whatisalocal2txt"></i18n-msg><span class="highlighted"><i18n-msg msgid="whatisalocallink2"></i18n-msg></span><i18n-msg msgid="whatisalocal3txt"></i18n-msg></p>
+                  </div>
+                </div>
+              </div> -->
 
 
             <!-- SECTION: whatisthelocalsecosystem? -->
-            <div class="contentsectie darkback">
+            <!-- <div class="contentsectie" id="localecototal">
               <div class="contentpart">
                 <div class="part">
-                  <h3><i18n-msg msgid="whatisthelocalsecosystem"></i18n-msg></h3>
-                  <p><i18n-msg msgid="whatisthelocalsecosystem1txt"></i18n-msg> <a href=""><i18n-msg msgid="whatisthelocalsecosystemlink1"></i18n-msg></a><i18n-msg msgid="whatisthelocalsecosystem2txt"></i18n-msg></p>
-
-                  <!--<a href=""><i18n-msg msgid="whatisalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity3txt"></i18n-msg> -->
+                  <h3><i18n-msg msgid="whatisthelocalsecosystem" id="localeco" on-tap="toggleItem"></i18n-msg></h3>
+             
+                  <iron-collapse id="localecocollapser">
+                    <p><i18n-msg msgid="whatisthelocalsecosystem1txt"></i18n-msg><a href="//www.ethereum.org/" target="_blank" class="linkyextern"><i18n-msg msgid="whatisthelocalsecosystemlink1"></i18n-msg></a><i18n-msg msgid="whatisthelocalsecosystem2txt"></i18n-msg></p>
+                  </iron-collapse>
                 </div>
-                  <!--      <img src="../images/decentralised-locals.png"> -->
               </div>
-            </div>
+            </div> -->
 
 
 
             <!-- SECTION: whatisthelocalcoin? -->
-            <div class="contentsectie darkback">
+            <!-- <div class="contentsectie" id="localcointotal">
               <div class="contentpart">
                 <div class="part">
-                  <h3><i18n-msg msgid="whatisthelocalcoin"></i18n-msg></h3>
-                  <p><i18n-msg msgid="whatisthelocalcoin1txt"></i18n-msg></p>
-
-                  <!--<a href=""><i18n-msg msgid="whatisalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity3txt"></i18n-msg> -->
+                  <h3><i18n-msg msgid="whatisthelocalcoin" id="localcoin" on-tap="toggleItem"></i18n-msg></h3>
+                  <iron-collapse id="localcoincollapser">
+                    <p><i18n-msg msgid="whatisthelocalcoin1txt"></i18n-msg><a href="//nl.wikipedia.org/wiki/Cryptogeld" target="_blank" class="linkyextern"><i18n-msg msgid="whatisthelocalcoinlink1"></i18n-msg></a><i18n-msg msgid="whatisthelocalcoin2txt"></i18n-msg></p>
+                  </iron-collapse>
                 </div>
-                  <!--      <img src="../images/decentralised-locals.png"> -->
               </div>
-            </div>
-
+            </div> -->
 
             <!-- SECTION: whatisalocalcommunity? -->
-            <div class="contentsectie darkback">
+            <div class="contentsectie" id="localcommunitytotal">
               <div class="contentpart">
                 <div class="part">
-                  <h3 name="localcommunity"><i18n-msg msgid="whatisalocalcommunity"></i18n-msg></h3>
-                  <p><i18n-msg msgid="whatisalocalcommunity1txt"></i18n-msg> <a href=""><i18n-msg msgid="whatisalocalcommunitylink1"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity2txt"></i18n-msg></p><br>
-                  <p><i18n-msg msgid="whatisalocalcommunity3txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity4txt"></i18n-msg><a href=""><i18n-msg msgid="whatisalocalcommunitylink3"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity5txt"></i18n-msg></p>
+                  <h3><i18n-msg msgid="whatisalocalcommunity" id="localcommunity" on-tap="toggleItem"></i18n-msg></h3>
+                  <iron-collapse id="localcommunitycollapser">
+                    <p><i18n-msg msgid="whatisalocalcommunity1txt"></i18n-msg> <span class="highlighted"><i18n-msg msgid="whatisalocalcommunitylink1"></i18n-msg></span><i18n-msg msgid="whatisalocalcommunity2txt"></i18n-msg></p>
+                    <br>
+                    <p><i18n-msg msgid="whycommunity4txt"></i18n-msg><span class="highlighted"></span><a href="//www.ethereum.org/" target="_blank" class="linkyextern"><i18n-msg msgid="whycommunitylink3"></i18n-msg></a><i18n-msg msgid="whycommunity5txt"></i18n-msg></p>
+                    <br>
 
-                  <!--<a href=""><i18n-msg msgid="whatisalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity3txt"></i18n-msg> -->
+                    <template is="dom-if" if="{{!queryMatches}}">
+                      <div class="illustratymobile">
+                        <img src="../images/localcommunity-mobile.png">
+                      </div>
+                    </template>
+                    <template is="dom-if" if="{{queryMatches}}">
+                    <div class="illustraty">
+                      <img src="../images/localcommunity.png">
+                    </div>
+                    </template>
+                    <br>
+
+                    <p class="smallest"><i18n-msg msgid="communityexampleonetitle"></i18n-msg></p>
+                    <div class="contentondersectie" id="communityexampleonetotal">
+                      <a href="/exampleone" class="linky littlebottom"><i18n-msg id="communityexampleone" msgid="communityexampleone" on-tap="scrolltoTop"></i18n-msg></a>
+                    </div>
+
+
+                    <!-- <p class="smallest"><i18n-msg msgid="communityexampleonetitle"></i18n-msg></p>
+                    <div class="contentondersectie" id="communityexampleonetotal">
+                      <h2 class="linky littlebottom"><i18n-msg id="communityexampleone" on-tap="toggleItemNoClasses" msgid="communityexampleone"></i18n-msg></h2>
+                      <iron-collapse id="communityexampleonecollapser">
+                        <p>
+                        <i18n-msg msgid="communityexampleone1txt"></i18n-msg>
+                        <i18n-msg msgid="communityexampleone2txt"></i18n-msg>
+                        <i18n-msg msgid="communityexampleone3txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone4txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone5txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone6txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone7txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone8txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone9txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone10txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone11txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone12txt"></i18n-msg><br><br>
+                        <i18n-msg msgid="communityexampleone13txt"></i18n-msg>
+                        </p>
+                      </iron-collapse>
+                    </div> -->
+
+                    <br>
+
+                    <p class="smallest"><i18n-msg msgid="communityexampletwotitle"></i18n-msg></p>
+                    <div class="contentondersectie" id="communityexampletwototal">
+                      <h2 class="linky littlebottom"><i18n-msg id="communityexampletwo" on-tap="toggleItemNoClasses" msgid="communityexampletwo"></i18n-msg></h2>
+                      <iron-collapse id="communityexampletwocollapser">
+                        <p><i18n-msg msgid="communityexampletwo1txt"></i18n-msg></p>
+                       
+                      </iron-collapse>
+                    </div>
+
+<!--                     <p class="linky littlebottom"><i18n-msg id="communityexampletwo" on-tap="toggleItemNoClasses" msgid="communityexampletwo"></i18n-msg></p>
+                    <iron-collapse id="communityexampletwocollapser">
+                      <p><i18n-msg msgid="communityexampletwo1txt"></i18n-msg></p>
+                      <br><br>
+
+                    </iron-collapse> -->
+                  </iron-collapse>
                 </div>
-                  <!--      <img src="../images/decentralised-locals.png"> -->
               </div>
             </div>
-
-
-
-
-
-
 
             <!-- SECTION: howdoesalocalcontractwork? -->
-            <div class="contentsectie topcontent">
+            <div class="contentsectie" id="howcontractworkstotal">
               <div class="contentpart">
                 <div class="part">
-                  <h3><i18n-msg msgid="howdoesalocalcontractwork"></i18n-msg></h3>
-                  <p><i18n-msg msgid="howdoesalocalcontractwork1txt"></i18n-msg> <a href=""><i18n-msg msgid="howdoesalocalcontractworklink1"></i18n-msg></a><i18n-msg msgid="howdoesalocalcontractwork2txt"></i18n-msg></p><br>
-                  <p><i18n-msg msgid="howdoesalocalcontractwork3txt"></i18n-msg><a href=""><i18n-msg msgid="howdoesalocalcontractworklink2"></i18n-msg></a><i18n-msg msgid="howdoesalocalcontractwork4txt"></i18n-msg><a href=""><i18n-msg msgid="howdoesalocalcontractworklink3"></i18n-msg></a><i18n-msg msgid="howdoesalocalcontractwork5txt"></i18n-msg></p>
-
-                  <!--<a href=""><i18n-msg msgid="whatisalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity3txt"></i18n-msg> -->
+                  <h3><i18n-msg msgid="howdoesalocalcontractwork" id="howcontractworks" on-tap="toggleItem"></i18n-msg></h3>
+                  <iron-collapse id="howcontractworkscollapser">
+                  <p><i18n-msg msgid="howdoesalocalcontractwork1txt"></i18n-msg> <a href="//nl.wikipedia.org/wiki/Cryptogeld" target="_blank" class="linkyextern"><i18n-msg msgid="howdoesalocalcontractworklink1"></i18n-msg></a><i18n-msg msgid="howdoesalocalcontractwork2txt"></i18n-msg><a href="//nl.wikipedia.org/wiki/Cryptogeld" target="_blank" class="linkyextern"><i18n-msg msgid="howdoesalocalcontractworklink2"></i18n-msg></a><i18n-msg msgid="howdoesalocalcontractwork3txt"></i18n-msg></p><br>
+                  <p><i18n-msg msgid="howdoesalocalcontractwork4txt"></i18n-msg><span class="highlighted"><i18n-msg msgid="howdoesalocalcontractworklink3"></i18n-msg></span><i18n-msg msgid="howdoesalocalcontractwork5txt"></i18n-msg></p>
+                  </iron-collapse>
                 </div>
-                  <!--      <img src="../images/decentralised-locals.png"> -->
-              </div>
-            </div>
-
-
-            <!-- SECTION: whyalocalcommunity? -->
-            <div class="contentsectie">
-              <div class="contentpart">
-                <div class="part">
-                  <h3><i18n-msg msgid="whyalocalcommunity"></i18n-msg></h3>
-                  <p><i18n-msg msgid="whyalocalcommunity1txt"></i18n-msg><!--  <a href=""><i18n-msg msgid="whyalocalcommunitylink1"></i18n-msg></a><i18n-msg msgid="whyalocalcommunity2txt"></i18n-msg> --></p><!-- <br>
-                  <p><i18n-msg msgid="whyalocalcommunity3txt"></i18n-msg><a href=""><i18n-msg msgid="whyalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whyalocalcommunity4txt"></i18n-msg><a href=""><i18n-msg msgid="whyalocalcommunitylink3"></i18n-msg></a><i18n-msg msgid="whyalocalcommunity5txt"></i18n-msg></p> -->
-
-                  <!--<a href=""><i18n-msg msgid="whatisalocalcommunitylink2"></i18n-msg></a><i18n-msg msgid="whatisalocalcommunity3txt"></i18n-msg> -->
-                </div>
-                  <!--      <img src="../images/decentralised-locals.png"> -->
               </div>
             </div>
 
 
 
-
-
-
+            <!-- SECTION: howdoistart? -->
+            <div class="contentsectie" id="howdoistarttotal">
+              <div class="contentpart">
+                <div class="part">
+                  <h3><i18n-msg msgid="howdoistart" id="howdoistart" on-tap="toggleItem"></i18n-msg></h3>
+                  <iron-collapse id="howdoistartcollapser">
+                  <p><i18n-msg msgid="howdoistart1txt"></i18n-msg> <a href="//localsworld.bitballoon.com" target="_blank" class="linkyextern"><i18n-msg msgid="howdoistartlink1"></i18n-msg></a><i18n-msg msgid="howdoistart2txt"></i18n-msg></p><br>
+                  </iron-collapse>
+                </div>
+              </div>
             </div>
-<!--             <div class="contentsectie darkerback">
-              <div class="whatis">
-                    <h2><i18n-msg msgid="whatis2tittel"></i18n-msg></h2>
-                    <div class="onderdeel">
-                    <div class="onderdeeltxt">
-                      <p><i18n-msg msgid="whatis2txt"></i18n-msg></p>
-                    </div>
-                    <img src="../images/weboftrust.png">
-                    </div>
-                </div>   
-              </div> -->
-            <!-- <div class="contentsectie darkerback">
-              <div class="whatis">
-                    <h2><i18n-msg msgid="whatis3tittel"></i18n-msg></h2>
-                    <div class="onderdeel">
-                    <div class="onderdeeltxt">
-                      <p><i18n-msg msgid="whatis3txt"></i18n-msg></p>
-                    </div>
-                    <img src="../images/smartcontracts.png">
-                    </div>
-                </div>   
-              </div> -->
 
-              <div class="bigwhitespace"></div>
+
+            <!-- SECTION: whomakeslocals? -->
+            <div class="contentsectie" id="whomakeslocalstotal">
+              <div class="contentpart">
+                <div class="part">
+                  <h3><i18n-msg msgid="whomakeslocals" id="whomakeslocals" on-tap="toggleItem"></i18n-msg></h3>
+                  <iron-collapse id="whomakeslocalscollapser">
+                  <p><i18n-msg msgid="whomakeslocals1txt"></i18n-msg></p><br>
+                  <p><i18n-msg msgid="whomakeslocals3txt"></i18n-msg></p>
+                  </iron-collapse>
+                </div>
+              </div>
+            </div>
+
 
             <!-- SECTIE 6: Einde -->
-            <div class="contentsectie blackback">
-              <div class="einde">
+              <div class="einde contentsectie blackback">
                       <div class="contact">
-                        <div class="contactlogo">
+                       <div class="contactlogo">
                         <img src="../images/Slack-Mark.png"><a href="https://locals-hq.slack.com">locals-hq.slack.com</a>
                         </div> 
                         <template is="dom-if" if="{{queryMatches}}"><p class="tussenschot semitransparant">|</p></template>
@@ -260,6 +294,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         <div class="contactlogo">
                           <img src="../images/GitHub-Mark_40x40.svg"><a target="blank" href="https://github.com/locals-world/locals-project/wiki">Github Project Wiki</a></div>
                       </div>
+
                       <div class="brand">
                         <img src="../images/locals-logo.png" class="logotje">
                         <h1 class="semitransparant">Locals</h1>
@@ -268,153 +303,106 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                     <p class="semitransparant bolder"><i18n-msg msgid="endmsg1"></i18n-msg><br>Copyright © Locals 2016</p>
               </div>
-            </div>
-          </div>
+
 
         </section>
+        <section data-route="foundation">
+          <p>watwat?</p>
+        </section>
+        <section data-route="exampleone">
+        <!-- <div class="examplescanvaspages">
+          <neon-animated-pages entry-animation="{{entryAnimation}}" exit-animation="{{exitAnimation}}" id="exampleonepages" selected="{{exampleoneselected}}">
+            <neon-animatable>
+              <div class="examplescontainer">
+                <p on-tap="nextExampleOne">next?</p>
+              </div>
+            </neon-animatable>
+            <neon-animatable>
+              <div class="examplescontainer blue">
+                <p on-tap="nextExampleOne">next?</p>
+                <p on-tap="prevExampleOne">prev?</p>
+
+              </div>
+            </neon-animatable>
+          </neon-animated-pages>
+        </div> -->
+        <div class="examplescanvas">
+
+            <div class="exampleshead">
+
+            <div class="examplesbackbar">
+            <a href="/">
+            <locals-button icon="arrowleft" verysmall bgrgba="0,0,0,0.05" on-tap="toHome"></locals-button></a>
+            </div> 
+
+              <div class="examplesheadtitle">
+                <h2 class="examplessubtitle">LocalCommunity <i18n-msg msgid="communityexampleonetitle"></i18n-msg></h2>
+                <h1 class="examplesmaintitle">
+                  <i18n-msg msgid="communityexampleone"></i18n-msg>
+                </h1>
+              </div>
+                   <div class="examplesheadimg">    
+              </div>            
+            </div>
+
+
+            <div class="examplescontentsectie">
+              <div class="examplescontentpart">
+                <div class="examplespart">
+                <p>
+
+                
+                <span class="examplessub"><i18n-msg msgid="communityexampleone1subtitle"></i18n-msg></span><br>
+                <i18n-msg msgid="communityexampleone1txt"></i18n-msg>
+                <i18n-msg msgid="communityexampleone2txt"></i18n-msg>
+                <i18n-msg msgid="communityexampleone3txt"></i18n-msg><br><br>
+
+                <span class="examplessub"><i18n-msg msgid="communityexampleone2subtitle"></i18n-msg></span><br>
+                <i18n-msg msgid="communityexampleone4txt"></i18n-msg><br><br>
 
 
 
+                    <template is="dom-if" if="{{!queryMatches}}">
+                      <div class="illustratymobile">
+                        <img src="../images/localcommunity-exampleone-illustraty.png">
+                      </div>
+                    </template>
+                    <template is="dom-if" if="{{queryMatches}}">
+                    <div class="illustraty">
+                      <img src="../images/localcommunity-exampleone-illustraty.png">
+                    </div>
+                    </template>
 
-      <!--   <section data-route="whitepaper">
+                    
+                <span class="examplessub"><i18n-msg msgid="communityexampleone3subtitle"></i18n-msg></span><br>
+                <i18n-msg msgid="communityexampleone5txt"></i18n-msg><br><br>
 
-          <paper-toolbar class="horizontal layout">
-            <a href="/">< terug</a><button><a href="../images/POEZENCLUB.pdf" target="_blank">Download als pdf</a></button>  
-          </paper-toolbar>
+                <span class="examplessub"><i18n-msg msgid="communityexampleone4subtitle"></i18n-msg></span><br>
+                <i18n-msg msgid="communityexampleone6txt"></i18n-msg><br><br>
 
-          <div class="whitepaper">
-            <br>
-            <h1>POEZENCLUB</h1><br>
-            <p>Een social blockchain experiment
-            <br>
-            A-Labs © 2016<br>
-            <a href="//poezenclub.be">http://poezenclub.be</a><br>
-            <a href="mailto:hello@a-labs.eu">hello@a-labs.eu</a>
-            </p>
-            <br>
-            <br>
-            <br>
-            <h2>Wat is de Poezenclub?</h2>
-            <h3>De Poezenclub is een sociaal experiment.</h3>
-            <p>De Poezenclub is een beta toepassing, opgezet door A-Labs, om op kleine schaal te experimenteren met gedecentraliseerde sociale tools. Door de Poezenclub leren we hoe mensen omgaan met deze nieuwe tools, hoe mensen interageren met elkaar d.m.v. de app. De onschuldigheid van de content en de beperkte functionaliteiten van de app zorgen ervoor dat we  snel leren en verbeteren. </p>
-            <br>
-            <h3>De Poezenclub is gedecentraliseerd.</h3>
-            <p>
-            Gedecentraliseerd is het ontbreken van een centrale instantie, van centrale opslag … dit maakt de Poezenclub een autonome toepassing, die in handen is van iedereen en van niemand. Het gebruik van blockchain-technologie (specifiek het <a href="//www.ethereum.org/" target="_blank">Ethereum-protocol</a>) maakt dit mogelijk. Als digitaal innovatielab wil A-Labs uitproberen hoe deze technologie een stedelijke gemeenschap kan verbeteren.</p>
-            <br>
-            <br>
-            <br>
-            <h2>Hoe werkt de Poezenclub?</h2>
-            <h3>Het concept</h3>
-            <p>Je wordt lid van de Poezenclub door de Poezenclub-app te openen. Als lid van de Poezenclub kan je een poes kiezen, een naam geven en ze laten valideren door reeds gevalideerde poezen. Na twee validaties is je poes gevalideerd. Je kan nu de Poezendoos openen en ook zelf twee andere poezen valideren.</p>
-            <br>
-            <h3>Enkele technische basisbegrippen</h3>
-            <p>
-            <span class="italic">Blockchain </span>( <a href="//en.wikipedia.org/wiki/Block_chain_(database)">https://en.wikipedia.org/wiki/Block_chain_(database)</a> )<br>
-            Een gedistribueerde database die verdeeld is over het volledige netwerk en onderhouden wordt door miners die alle transacties herberekenen. Door de combinatie van gedecentraliseerde architectuur, encryptie en verificatie door de miners coördineert de blockchain de instemming van alle partijen. <br>
-            <span class="italic">Ethereum </span>( <a href="www.ethereum.org">www.ethereum.org</a> )<br>
-            Een gedecentraliseerd platform voor smart contracts die applicaties draaien zonder tussenpersonen en zonder risico op downtime, censuur, fraude. <br>
-            <span class="italic">Ether </span>( <a href="//www.ethereum.org/ether">https://www.ethereum.org/ether</a> )<br>
-            De cryptocurrency van Ethereum, die nodig is om smart contracts uit te voeren. De miners in Ethereum worden hierin betaald voor hun rekenwerk dus ether wordt gezien als de olie die de machine doet draaien. <br>
-            <span class="italic">Smartcontracts </span>( <a href="//en.wikipedia.org/wiki/Smart_contract">https://en.wikipedia.org/wiki/Smart_contract</a> )<br>
-            Computerprotocols die de onderhandeling of de uitvoering van een contract faciliteren, verifiëren of bekrachtigen.<br>
-            <span class="italic">MQTT </span>( <a href="//mqtt.org/">http://mqtt.org/</a> )<br>
-            Een protocol om machines met machines te laten praten.</p>
-            <br>
+                <span class="examplessub"><i18n-msg msgid="communityexampleone5subtitle"></i18n-msg></span><br>
+                <i18n-msg msgid="communityexampleone7txt"></i18n-msg><br><br>
 
-            <h3>Technische omschrijving per actie</h3>
-            <p><span class="italic">Ik open de app </span></p>
-            <ul>
-              <li>Er wordt lokaal op mijn toestel een wallet aangemaakt met public en private key en een account balance.</li>
-              <li>Op het membershipcontract in Ethereum wordt een nieuwe lijn toegevoegd, waarin mijn account als nieuw lid word toegevoegd.
-              </li>
-              <li>Er wordt in Ethereum een validatiecontract aangemaakt voor mijn account.
-              </li>
-              <li>Ik ontvangt 1 ether in mijn wallet.</li>
-            </ul>
-            <br>
-            
-            <p><span class="italic">Ik kies een naam en foto voor mijn kat</span></p>
-            <ul>
-              <li>Deze gegevens worden lokaal op mijn toestel bewaard.</li>
-            </ul>
-            <br>
-            
-            <p><span class="italic">Om mijn poes te laten valideren, vraag ik de pincode van een lid met een gevalideerde poes </span></p>
-            <ul>
-              <li>Er wordt over MQTT een bericht gestuurd naar het topic “.../pincode-validator”. In dit bericht staat de foto en de naam van mijn te valideren kat, het commando “valideer mij”, mijn pincode en mijn validatiecontractadres.</li>
-              <li>De validator ontvangt over MQTT van het topic “.../pincode-validator” dit bericht en ziet in de app de te valideren gegevens.</li>
-            </ul>
-            <br>
+                <span class="examplessub"><i18n-msg msgid="communityexampleone6subtitle"></i18n-msg></span><br>   
+                <i18n-msg msgid="communityexampleone8txt"></i18n-msg><br><br>
 
-            <p><span class="italic">Validator bevestigt in de app mijn gegevens</span></p>
-            <ul>
-              <li>Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-aanvrager”.  In dit bericht staat de boodschap “validatie ok”.</li>
-              <li>Op mijn validatiecontract wordt +1 validatie toegevoegd.</li>
-              <li>Er wordt 1 ether van de wallet van de validator naar mijn wallet gestuurd, m.a.w. het kost 1 ether om iemand te valideren.</li>
-              <li>Over MQTT wordt naar mij verstuurd dat de validator bevestigd heeft.</li>
-            </ul>
-            <br>
+                <i18n-msg msgid="communityexampleone8btxt"></i18n-msg><br><br>
+                <br>
+                <span class="examplequote"><i18n-msg msgid="communityexampleone9txt"></i18n-msg></span><br><br><br>
+                
+                <span class="examplessub"><i18n-msg msgid="communityexampleone7subtitle"></i18n-msg></span><br>
+                <i18n-msg msgid="communityexampleone10txt"></i18n-msg>
+                <i18n-msg msgid="communityexampleone11txt"></i18n-msg><br><br>
+                <i18n-msg msgid="communityexampleone12txt"></i18n-msg>
+                <i18n-msg msgid="communityexampleone13txt"></i18n-msg>
+                </p>
+                </div>
+              </div>
+            </div>
 
-            <p><span class="italic">Ik vraag een tweede validatie aan een ander lid met een gevalideerde poes</span></p>
-            <ul>
-              <li>Alle stappen zoals hierboven beschreven worden herhaald.</li>
-              <li>Eens er twee validaties op het validatiecontract staan, worden nieuwe functies in de app ontsloten: openen van de doos, zelf kunnen valideren.</li>
-            </ul>
-            <br>
+        </div>
 
-            <p><span class="italic">Om de doos te openen, voer ik in de app de pincode van de doos in</span></p>
-            <ul>
-              <li>Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-doos”. In dit bericht staat mijn validatiecontractadres, mijn pincode en het commando “check contract”.</li>
-              <li>De doos ontvangt dit bericht en checkt het aantal validaties op mijn validatiecontract.</li>
-              <li>Staan er 2 validaties op mijn validatiecontract, dan opent de doos.</li>
-              <li>Een nieuwe pincode voor de doos worden aangemaakt.</li>
-            </ul>
-            <br>
-
-            <p><span class="italic">Ik sluit de doos</span></p>
-            <ul>
-              <li>Er wordt over MQTT een bericht gestuurd naar topic “.../pincode-doos”. In dit bericht staat het het commando “sluit doos”. De doos ontvangt dit bericht en sluit.</li>
-            </ul>
-            <br>
-            <br>
-            <br>
-            <h2>Social economics in de Poezenclub</h2>
-            <h3>De waarde van het valideren</h3>
-            <p>Een gedecentraliseerd netwerk moet op zichzelf kunnen bestaan en verder uitbreiden, zonder onderhoud van een centrale partij. Daarom kost in het Ethereum protocol elke transactie met een smart contract een kleine hoeveelheid ether, een soort transactiekost betaald door het netwerk.<br><br>
-            Wij gaan voor het Poezenclub-netwerk een stap verder en voeren social economics in: we geven een waarde aan het valideren, nl. 1 validatie = 1 ether. Het kost de validator 1 ether om een poes te valideren. De te valideren poes ontvangt deze ether. Op deze manier zorgen we ervoor dat alle nodes gelijkwaardig zijn in het netwerk en kan geen enkele node een belangrijkere of meer centrale positie krijgen in het netwerk (vb. één node die 100 validaties uit zou voeren).<br><br>
-            Concreet krijgt elk nieuw lid van de Poezenclub bij aanmaak van zijn account 1,005 ether in zijn wallet. Per validatie krijgt hij er 1 ether bij. Met een volledig gevalideerde poes heeft dit lid in zijn wallet dus 3,1 ether: 1,1 (aanmaak account) + 1 (eerste validatie) + 1 (tweede validatie). Met deze 3,1 ether kan hij op zijn beurt 3 nieuwe poezen valideren. Zonder ether kan er niet gevalideerd worden, dus elk lid van de Poezenclub (met een gevalideerde poes) kan maximaal 3 andere poezen valideren. Met dit ingebouwd mechanisme van social economics bewaart de Poezenclub zijn decentrale netwerkstructuur.</p>
-            <br>
-            <br>
-            <br>
-            <h2>Wat willen we leren uit de Poezenclub?</h2>
-            <h3>Werken alle technische componenten?</h3>
-            <ul>
-              <li>Is Ethereum het protocol dat we willen gebruiken voor dit soort tools?</li>
-              <li>Is het handig voor de gebruiker om vanuit een front-endapp (in dit geval Polymer) te interageren met een blockchain?</li>
-              <li>Klopt de opmaak van de twee smart contracts in de app, nl. Membershipcontract en Validatiecontract? Zijn deze twee contracten voldoende of moeten er meer zijn?</li>
-              <li>Wat zijn technologische valkuilen waardoor het systeem vastloopt?</li>
-            </ul>
-            <h3>Werken de social economics zoals voorzien?</h3>
-            <ul>
-              <li>Hoeveel leden komen erbij per uur en per dag?</li>
-              <li>Hoeveel mensen worden gevalideerd per uur en per dag?</li>
-              <li>Hoeveel mensen laten zich niet valideren?</li>
-              <li>Hoeveel mensen gebruiken alle validatiemogelijkheden?</li>
-              <li>Hoeveel mensen komen er om hulp vragen?</li>
-              <li>Lopen de social economics zoals door ons voorzien?</li>
-              <li>Kunnen we uit de teller van adam afleiden op welk tijdstip een nieuw lid zich aanmeldt?</li>
-            </ul>
-            <h3>Wat brengt dit experiment bij de deelnemers te weeg?</h3>
-            <ul>
-              <li>Zien de deelnemers het potentieel van de gebruikte toepassing, verder dan de poezenclub? Komen er nieuwe ideëen door tot stand?</li>
-              <li>Breidt het netwerk zich verder uit dan de gesloten testgemeenschap van collega’s (bv thuis)?</li>
-              <li>Doen de deelnemers de moeite om te gaan onderzoeken/lezen wat er nu eigenlijk gebeurt, of zijn mensen daarin niet geïnteresseerd?</li>
-            </ul>
-
-          </div>
-        </section>     -->    
-
+        </section>
       </iron-pages>
     </div>
 
